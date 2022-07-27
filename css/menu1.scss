@@ -5,7 +5,12 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-
+h1{
+    a{
+        color:black;
+        text-decoration: none;
+    }
+}
 /*BACKGROUND*/
 .main{
     background-color: #f6f6f6;
@@ -51,20 +56,21 @@
             transition : .2s;
             margin-bottom: 15px;
             width:350px;
+            animation-delay:.3s;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
 
             .text-menu{
                 flex-flow: column wrap;      
-                line-height: 10px;
+                line-height: 13px;
                 justify-content: center;
                 width: 100%;
                 cursor:pointer;
                 display: inline-block;
-                position: relative;
-                transition: 0.5s;
-
-
-
-
+                position:relative;
+                text-overflow: ellipsis;
+               
                 h4{
                 @include h4_font;
                 text-align: left;
@@ -73,10 +79,35 @@
                     @include flex_row;
                     justify-content: space-between;
                     width:100%;
-                        p{
-                            font-weight: bold;
+
+                    .animation-rect{
+                    display:center;
+          
+                        margin:-38px -120px -10px 10px;
+                        width: 70px;
+                        height: 63px;
+                        background-color: #99E2D0;
+                        transition: 0.3s linear;
+
+                        i{
+                        color: white;
+                        margin-top:25%;
+                        animation-duration: 0.8s;
+                        animation-iteration-count: 2
+                        ;
+             
+                    
                         }
                     }
+
+                        p{
+                            font-weight: bold;
+                           align-self: flex-end;
+                           text-align: right;
+                        }
+                    }
+
+    
                 }
 
                 &:last-child{
@@ -84,10 +115,64 @@
                 
                 }
             }
-        }
-            .wrapper-grid{
-                @include wrapper-grid;
+.btn-menu:hover{
+    
+    .text-menu{
+   
+    h4{
+        
+        white-space: nowrap;
+        text-overflow : ellipsis;
+     
+    }
+        .descriptif-menu{
+       
+            p{
+                transform: translateX(-60px);
+           
+                transition: 0.3s ease-in-out;   
+                white-space: nowrap;
+                text-overflow : ellipsis;
+                overflow: hidden;
+                float:right;
+                position:relative;
+                left:30px;
+                
             }
+
+            span{
+    
+            
+                white-space: nowrap;
+                text-overflow : ellipsis;
+                overflow: hidden;
+                width:200px;
+                text-align: left;
+                text-align: justify; 
+               
+               
+            }
+            
+        }
+       
+        }
+        
+    .animation-rect{
+          
+        background:red;
+        transform: translateX(-100px);
+        border-radius: 0 20px 20px 0;    
+
+        i{
+            transition: all 0.3s ease-in-out 2s;
+        }
+    }
+
+}
+
+   
+        }
+            
             .btn-cmder{
                 background-color: #f6f6f6;
                 text-align: center;

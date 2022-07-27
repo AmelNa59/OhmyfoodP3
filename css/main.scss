@@ -5,7 +5,8 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-/*CITY*/
+
+/*CITY MAP*/
     .map{
     @include flex_row();
     height:50px;
@@ -21,6 +22,7 @@
         height:35px;
      
         }
+
     span{
         font-family: $main-ffamily;
         font-size: 17px;
@@ -35,31 +37,21 @@
         display:block;
         background-color:$background-block-section;
         text-align: center;
-        h2{
-            font-family: $main-ffamily;
-            font-size:24px; 
-            font-weight:800;
-            text-align:center;
-            padding:35px;
-            letter-spacing: 0;
-            padding-bottom: 0;
-            margin:0;
+
+        h2:hover{
+            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+          
         }
 
-        p{
-            text-align: center;
-            font-family:$main-ffamily;
-            font-size: 16px;
-            font-weight: 300;
-            margin:15px;
-           
+
+        p:hover{
+            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+          
         }
 
-        button{
-            @include grad-button();
-            @include grad-button-purple();
-            margin-bottom: 60px;
-            
+        .button{
+            box-shadow: 0 3px 5px #ccc;
+
         }
         }
 
@@ -76,15 +68,59 @@
             .wrapper-grid{
                 @include wrapper-grid;
           
-                .btn1{
-                    width:310px;
+                .button {
+                    font: 14px/2.3em trebuchet,arial;
+                    color: #353535;
+                    text-shadow: 0 1px 0 #fff;
+                    text-align: center;
+                    text-decoration: none;
+                    display: block;
+                    padding: 25px 15px;
+                    width:320px;
+                    position:relative;
+                    margin: 3px auto 5px;
+                
+                    border: 1px solid #ddd;
+                    -moz-border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    border-radius: 20px;
+                    -moz-box-shadow: 0 3px 5px #ccc;
+                    -webkit-box-shadow: 0 3px 5px #ccc;
+                    -o-box-shadow: 0 3px 5px #ccc;
+                    -ms-box-shadow: 0 3px 5px #ccc;
+                    box-shadow: 0 3px 5px #ccc;
+
+                    .number{
+                        counter-increment: compteListe 1;
+                        content: counter(compteListe) " ";
+                        background: #9356dc;
+                        height:30px;
+                        width: 30px;
+                        border-radius: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        position: absolute;
+                        left:-15px;
+                    }
+
+                   
                         span{
-                    background-color: #f6f6f6;
-                    color:#191919;
-                    font-weight: bold;
+                            font-weight: bold;
+                            font-size:17px;
+                            letter-spacing: 0px;
                             }
                             }
+                            
                         }
+
+                .btn1:hover{
+                    box-shadow:0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+                        
+                }
         }
     
     
@@ -94,15 +130,43 @@
         background-color:#f6f6f6;
         align-content: center;
         gap:40px;
+        margin-top:50px;
         h2{
             @include h2_font();
             align-self: start;
+            margin-bottom: 0;
         }
 
-        
+        .palette:hover{
+         
+            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+            border-radius: 10px;
+                        
+    }
+
         .palette{
             @include flex_row();
             @include size_block();
+            position: relative;
+
+            .new-rect{
+                width:80px;
+                height:6px;
+                background-color: #99e2d0;
+               
+                padding:12px;
+                top:1rem;
+                position:absolute;
+                right:.75rem;
+              
+                span{
+                    color:#058a6a;
+                    font-size:15px;
+                    top:3px;
+                    position: absolute;
+                    font-family: $main-ffamily;
+                }
+            }
 
             a{
                 width:100%;
@@ -118,7 +182,31 @@
 
             .descriptif_palette{
             @include descriptif-block();
+            display: flex;
+            justify-content: space-between;
             margin-top:-4px;
+
+            .heart{
+                align-self: center;
+
+                i{
+                    
+                    padding-top: 3px;
+                    padding-right: 10px;
+             
+                }
+                i:hover{
+                    color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                    background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    padding-top: 3px;
+                    padding-right: 10px;
+                    -webkit-text-fill-color: transparent;
+                    font-weight:bold;
+                }
+            }
             h3{
                 @include h3_font();
             }
@@ -126,21 +214,36 @@
             span{
                 @include span-restaurants();
             }
-            i{
-                color:red;
-                display:inline-flex;
-                justify-items: end;
-                cursor:pointer;
-                width:35px;
-                height:35px;
-             
-                }
             }
+
+            
         }
+                  
+        
         
         .note{
             @include flex_row();
             @include size_block();
+            position: relative;
+
+            .new-rect{
+                width:80px;
+                height:6px;
+                background-color: #99e2d0;
+               
+                padding:12px;
+                top:1rem;
+                position:absolute;
+                right:.75rem;
+              
+                span{
+                    color:#058a6a;
+                    font-size:15px;
+                    top:3px;
+                    position: absolute;
+                    font-family: $main-ffamily;
+                }
+            }
             a{
                 width:100%;
                 text-decoration: none;
@@ -157,7 +260,33 @@
     
             .descriptif_note{
             @include descriptif-block();
+            display: flex;
+            justify-content: space-between;
             margin-top:-4px;
+
+            
+
+            .heart{
+                align-self: center;
+
+                i{
+                    
+                    padding-top: 3px;
+                    padding-right: 10px;
+             
+                }
+                i:hover{
+                    color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                    background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    padding-top: 3px;
+                    padding-right: 10px;
+                    -webkit-text-fill-color: transparent;
+                    font-weight:bold;
+                }
+            }
             h3{
                 @include h3_font();
             }
@@ -167,9 +296,18 @@
             }
             }
                 }
+
+        .note:hover{
+            box-shadow: 10px 5px 5px #c267dc;
+   
+
+        }
         .française{
             @include flex_row();
             @include size_block();
+            @include flex_row;
+
+
             a{
                 width:100%;
                 text-decoration: none;
@@ -185,7 +323,32 @@
 
         .descriptif_française{
         @include descriptif-block();
+        display: flex;
+        justify-content: space-between;
         margin-top:-4px;
+
+        .heart{
+            align-self: center;
+
+            i{
+                    
+                padding-top: 3px;
+                padding-right: 10px;
+         
+            }
+            i:hover{
+                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                padding-top: 3px;
+                padding-right: 10px;
+                -webkit-text-fill-color: transparent;
+                font-weight:bold;
+            }
+        }
+        
         h3{
             @include h3_font();
         }
@@ -193,15 +356,28 @@
         span{
             @include span-restaurants();
         }
+
         }
                     }
+
+        .française:hover{
+            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+            border-radius: 10px;
+                        
+        }
         .delice{
             @include flex_row();
             @include size_block();
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 90px;
+          
+
+
             
             a{
                 width:100%;
+      
                 text-decoration: none;
               color:#353535;
               letter-spacing:-1px;
@@ -215,6 +391,32 @@
         .descriptif_delice{
         @include descriptif-block();
         margin-top:-4px;
+        display: flex;
+        justify-content: space-between;
+        .heart{
+            align-self: center;
+
+            i{
+                    
+                padding-top: 3px;
+                padding-right: 10px;
+        
+
+         
+            }
+            i:hover{
+                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                font-weight:bold;
+                padding-top: 3px;
+                padding-right: 10px;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+     
         h3{
             @include h3_font();
         }
@@ -223,6 +425,12 @@
             @include span-restaurants();
         }
     }
+        }
+
+        .delice:hover{
+            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+            border-radius: 10px;
+                        
         }
     }
     

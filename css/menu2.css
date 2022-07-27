@@ -16,6 +16,24 @@ html, body {
   justify-content: center;
 }
 
+.btn1 {
+  font: 14px/2.3em trebuchet, arial;
+  color: #353535;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 25px 15px;
+  width: 320px;
+  position: relative;
+  margin: 3px auto 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  -o-box-shadow: 0 3px 5px #ccc;
+  -ms-box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0 3px 5px #ccc;
+}
+
 header {
   position: relative;
   display: flex;
@@ -52,6 +70,9 @@ footer a {
   color: white;
   font-family: "Roboto", sans-serif;
   line-height: 25px;
+}
+footer i {
+  padding-right: 12px;
 }
 
 /*BACKGROUND*/

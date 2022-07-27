@@ -15,6 +15,13 @@
    </head>
 
    <body>
+      <div class="loader">
+     
+         <i class="fa-solid fa-spinner fa-spin-pulse fa-5x"></i>
+
+     </div>
+
+
       <header>
          <h1>ohmyfood</h1>
       </header>
@@ -69,36 +76,62 @@
          <div class="wrapper-grid">
 
          <div class="palette"><a href="./menu3.html" alt="La palette du goût">
+            <div class="new-rect"><span>Nouveau</span></div>
             <img id="palettegout_img" src="images/restaurants/photo1.jpg" alt="La palette du goût">
             <div class="descriptif_palette">
+               <div class="text">
                <h3>La palette du goût</h3>
                <span>Ménilmontant</span>
-               <i class="fa-thin fa-heart"></i>
-            </div></a>
+               </div>
+               <div class="heart">
+                  <i class="far fa-heart fa-2x"></i>
+               </div>
+            </div>
+             </a>
          </div>
 
          <div class="note"><a href="./menu2.html" alt="La note">
+            <div class="new-rect"><span>Nouveau</span></div>
             <img id="note_img" src="images/restaurants/photo3.jpg" alt="La note enchantée">
             <div class="descriptif_note">
+               <div class="text">
                <h3>La note enchantée</h3>
                <span>Charonne</span>
+               </div>
+         
+               <div class="heart">
+                  <i class="far fa-heart fa-2x"></i>
+                </div>
             </div></a>
          </div>
 
          <div class="française"><a href="./menu1.html" alt="A la française">
             <img id="française_img" src="images/restaurants/photo4.jpg"  alt="A la fraançaise">
             <div class="descriptif_française">
+               <div class="text">
                <h3>A la française</h3>
                <span>Cité rouge</span>
-               <i class="fa-thin fa-heart"></i>
-           </div></a>
+               </div>
+          
+            <div class="heart">
+               <i class="far fa-heart fa-2x"></i>
+         </div>
+      </div>
+          </a>
          </div>
 
          <div class="delice"><a href="./menu4.html" alt="La palette du goût">
+         
             <img id="delicesens_img" src="images/restaurants/photo2.jpg"  alt="Le délice des sens">
+            
             <div class="descriptif_delice">
+               <div class="text">
                <h3>Le delice des sens</h3>
                <span>Folie-Méricourt</span>
+            </div>
+               <div class="heart">
+                  <i class="far fa-heart fa-2x"></i>
+            </div>
             </div>
        </div></a>
       </div>
@@ -107,11 +140,13 @@
 
       <footer>
        <p>ohmyfood</p>
-           <a href="#" class="footer_link">Proposer un restaurant</a>
-           <a href="#" class="footer_link">Devenir partenaire</a> 
+       <a href="#" class="footer_link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>  
+       <a href="#" class="footer_link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> 
            <a href="#" class="footer_link">Mentions légales</a> 
            <a href="#" class="footer_link">Contact</a>
         
       </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
