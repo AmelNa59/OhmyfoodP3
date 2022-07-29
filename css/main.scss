@@ -45,7 +45,7 @@
 
 
         p:hover{
-            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+            box-shadow:10px 10px 20px black( 0 0 / 25%);
           
         }
 
@@ -66,8 +66,6 @@
                 margin:30px;
             }
             .wrapper-grid{
-                @include wrapper-grid;
-          
                 .button {
                     font: 14px/2.3em trebuchet,arial;
                     color: #353535;
@@ -361,7 +359,7 @@
                     }
 
         .française:hover{
-            box-shadow:10px 10px 20px rgb( 0 0 / 25%);
+            box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
                         
         }

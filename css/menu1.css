@@ -1,17 +1,279 @@
-/* Error: Undefined mixin.
- *     ,
- * 182 |             @include grad-button-purple;
- *     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   css\menu1.scss 182:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a     \2577 \a 182 \2502              @include grad-button-purple;\d\a     \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   css\\menu1.scss 182:13  root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+html, body {
+  margin: auto;
+  position: relative;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  padding: 35px;
+  letter-spacing: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
+}
+
+.btn1 {
+  font: 14px/2.3em trebuchet, arial;
+  color: #353535;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 25px 15px;
+  width: 320px;
+  position: relative;
+  margin: 3px auto 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  -o-box-shadow: 0 3px 5px #ccc;
+  -ms-box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0 3px 5px #ccc;
+}
+
+.btn-model {
+  border: none;
+  margin: 20px;
+  padding: 18px 15px 18px 15px;
+  width: 210px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.gradient-purple {
+  background: #E78FE1;
+  background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+}
+header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/*SECTION FOOTER*/
+footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  background-color: #353535;
+  color: white;
+  padding: 30px;
+}
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin: 2px;
+  padding-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+}
+footer i {
+  padding-right: 12px;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+/*BACKGROUND*/
+.main {
+  background-color: #f6f6f6;
+}
+
+.block-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.block-image #img-menu {
+  height: 260px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block-image #img-menu {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.plats-btns {
+  background-color: #f6f6f6;
+  margin-top: 0;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: 210px;
+}
+.plats-btns h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.plats-btns h3 {
+  font-weight: 100;
+  padding-left: 15px;
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+.plats-btns .btn-menu {
+  font: 14px/2.3em trebuchet, arial;
+  color: #353535;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 15px 15px;
+  width: 320px;
+  margin: 3px auto 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  -o-box-shadow: 0 3px 5px #ccc;
+  -ms-box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0 3px 5px #ccc;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: white;
+  height: 65px;
+  padding-top: 30px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+  width: 350px;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plats-btns .btn-menu .text-menu {
+  flex-flow: column wrap;
+  line-height: 13px;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-overflow: ellipsis;
+}
+.plats-btns .btn-menu .text-menu h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -1px;
+  margin: 0;
+  text-align: left;
+}
+.plats-btns .btn-menu .text-menu .descriptif-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.plats-btns .btn-menu .text-menu .descriptif-menu .animation-rect {
+  display: center;
+  margin: -38px -120px -10px 10px;
+  width: 70px;
+  height: 63px;
+  background-color: #99E2D0;
+  transition: 0.3s linear;
+}
+.plats-btns .btn-menu .text-menu .descriptif-menu .animation-rect i {
+  color: white;
+  margin-top: 25%;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+.plats-btns .btn-menu .text-menu .descriptif-menu p {
+  font-weight: bold;
+  align-self: flex-end;
+  text-align: right;
+}
+.plats-btns .btn-menu:last-child {
+  margin-bottom: 0px;
+}
+.plats-btns .btn-menu:hover .text-menu h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plats-btns .btn-menu:hover .text-menu .descriptif-menu p {
+  transform: translateX(-60px);
+  transition: 0.3s ease-in-out;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  left: 30px;
+}
+.plats-btns .btn-menu:hover .text-menu .descriptif-menu span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+  text-align: left;
+  text-align: justify;
+}
+.plats-btns .btn-menu:hover .animation-rect {
+  background: red;
+  transform: translateX(-100px);
+  border-radius: 0 20px 20px 0;
+}
+.plats-btns .btn-menu:hover .animation-rect i {
+  transition: all 0.3s ease-in-out 2s;
+}
+
+.btn-cmder {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.btn-cmder .Commander {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}/*# sourceMappingURL=menu1.css.map */
