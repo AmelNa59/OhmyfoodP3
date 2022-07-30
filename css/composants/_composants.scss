@@ -7,11 +7,12 @@
         grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
         width:100%;
         justify-items: center;
-        gap:2em;
+        gap:2px;
         justify-content: center;
 
     }
 
+    /*BOUTON FONCTIONNEMENT*/
     .btn1{
         font: 14px/2.3em trebuchet,arial;
         color: #353535;
@@ -33,9 +34,10 @@
         -webkit-box-shadow: 0 3px 5px #ccc;
         -o-box-shadow: 0 3px 5px #ccc;
         -ms-box-shadow: 0 3px 5px #ccc;
-        box-shadow: 0 3px 5px #ccc;
+        box-shadow:0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
     }
 
+        /*BOUTON DE BASE HERO*/
     .btn-model{
         border:none;
         margin:20px;
@@ -47,10 +49,3 @@
         font-size: 16px;
         color:white;
     }
-
-   .gradient-purple{       
-        background: #E78FE1;
-        background: -moz-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-        background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-        background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-          }

@@ -6,29 +6,29 @@
 @import "./layouts/footer";
 
 header{
-.header_arrow{
-
-    i{
-        position: absolute;
-        left: 2rem;
-        height: 2rem;
-        width: 2rem;
-        top: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #000;
+    .header_arrow{
+    
+        i{
+            position: absolute;
+            left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #000;
+        }
+    h1{
+        a{
+            color:black;
+            text-decoration: none;
+        }
     }
-h1{
-    a{
-        color:black;
-        text-decoration: none;
     }
-}
-}
-}
+    }
 /*BACKGROUND*/
 .main{
     background-color: #f6f6f6;
@@ -47,6 +47,8 @@ h1{
             margin-top:210px;
             padding-left: 25px;
             padding-right: 25px;
+            
+  
             .title-menu{
                 display:flex;
                 @include flex_row;
@@ -84,8 +86,7 @@ h1{
                     }
                 }
                 }
-            }      
-  
+            }  
 
 
             h2{
@@ -97,12 +98,11 @@ h1{
             }
             h3{
                 font-weight: 100;
- 
+            
                 width   : 50px; 
                 position: relative;
                 z-index : 1;
                 border-bottom: 3px solid #b5e8db;
-            
             }
 
 
@@ -151,74 +151,78 @@ h1{
                     justify-content: space-between;
                     width:100%;
 
-                  
                     .animation-rect{
-                        display:center;
-                        display:flex;
+                    display:center;
+                    display:flex;
+          
                         margin:-38px -120px -10px 10px;
-                         width: 60px;
-                         height: 65px;
+                        width: 60px;
+                        height: 65px;
                         background-color: #99E2D0;
-                     
-                            i{
-                            color: white;
-                            display: flex;
-                            align-self: center;
-                            padding-left: 25%;
-                        
-                            }
+                  
+
+                        i{
+                        color: white;
+                    align-self: center;
+                    padding-left: 25%;
+                    transform: rotate(90deg);
+                   transition-duration:.5s;
+               
+             
+                    
                         }
-
-                    .tartare{
-                        width:45%;
-                        text-align: right;
-                        font-weight: bold;
-                        
                     }
 
-                    .puree{
-                        font-weight: bold;
-                    }
-
-                    .revisite2{
-                        width:70%;
-                        text-align: right;
-                        font-weight: bold;
-                    }
-                    .gnocchis{
-                        width:10%;
-                        text-align: right;
-                        font-weight: bold;
-                    }
-                    .petales{
+                    .thon{
                         width:45%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .myrtilles{
+
+                    .legumes{
+                        width:20%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                    .cepes{
+                        width:65%;
+                        text-align: right;
+                        font-weight: bold;
+                    } 
+                    .poulet{
+                        width:45%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                    .saison{
                         width:35%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .magret{
-                        width:15%;
+                    .panais{
+                        width:45%;
                         text-align: right;
                         font-weight: bold;
-
                     }
-                    .carotte{
-                        width:30%;
-                        text-align: right;
-                        font-weight: bold;
-                        
-                    }
-
-                    .revisite{
+                    .farandole{
                         width:70%;
                         text-align: right;
                         font-weight: bold;
-                        
                     }
+
+                    .creme{
+                        width:70%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+
+                    
+                    .tiramisu{
+                        width:65%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+
               
                         p{
                             font-weight: bold;
@@ -384,55 +388,53 @@ h1{
     }
         .descriptif-menu{
        
-            .tartare{
+            .tiramisu{
                 width:25%;
                 text-align: left;
                 
             }
-            .carotte{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .gnocchis{
-                width:25%;
-                text-align: left;
-                
-            }
-            .magret{
-                width:25%;
-                text-align: left;
-                
-            }
-            .myrtilles{
+            .creme{
                 width:25%;
                 text-align: left;
                 
             }
 
-            .puree{
+            .farandole{
                 width:25%;
                 text-align: left;
-                font-weight: bold;
+                
+            }
+            .panais{
+                width:25%;
+                text-align: left;
+                
+            }
+            .saison{
+                width:25%;
+                text-align: left;
                 
             }
 
-            .petales{
+            .poulet{
                 width:25%;
                 text-align: left;
-                font-weight: bold;
                 
             }
 
-            .revisite{
+            .legumes{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .cepes{
                 width:25%;
                 text-align: left;
                 
             }
 
             
-            .revisite2{
+            .thon{
                 width:25%;
                 text-align: left;
                 
@@ -449,38 +451,7 @@ h1{
                 left:30px;
                 
             }
-        
-    .animation-rect{
-          
-        background:#99E2D0;
-        transform: translateX(-100px);
-        border-radius: 0 20px 20px 0;    
-        transition-duration: 1s;
 
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform:rotate(180deg);
-   
-     
-        }
-    }
-    .animation-rect:hover{
-          
-        background:#99E2D0;
-     
-        border-radius: 0 20px 20px 0;    
-
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform: rotate(180deg);
-            transition-duration: .2s;
-
-        }
-    }
             span{
     
             
@@ -521,13 +492,14 @@ h1{
                     }
                 }
             }
-            
         }
        
         }
+        
+  
+    }
 
 
-}
 
    
         

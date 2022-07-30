@@ -26,15 +26,21 @@ p {
   margin: 15px;
 }
 
+.gradient-purple {
+  background: #E78FE1;
+  background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+}
+
 .wrapper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   width: 100%;
   justify-items: center;
-  gap: 2em;
+  gap: 2px;
   justify-content: center;
 }
 
+/*BOUTON FONCTIONNEMENT*/
 .btn1 {
   font: 14px/2.3em trebuchet, arial;
   color: #353535;
@@ -50,9 +56,10 @@ p {
   border-radius: 20px;
   -o-box-shadow: 0 3px 5px #ccc;
   -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
+/*BOUTON DE BASE HERO*/
 .btn-model {
   border: none;
   margin: 20px;
@@ -63,11 +70,6 @@ p {
   cursor: pointer;
   font-size: 16px;
   color: white;
-}
-
-.gradient-purple {
-  background: #E78FE1;
-  background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
 }
 
 header {
@@ -111,7 +113,20 @@ footer i {
   padding-right: 12px;
 }
 
-h1 a {
+header .header_arrow i {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #000;
+}
+header .header_arrow h1 a {
   color: black;
   text-decoration: none;
 }
@@ -144,21 +159,59 @@ h1 a {
   border-radius: 50px 50px 0 0;
   position: relative;
   margin-top: 210px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
-.plats-btns h2 {
+.plats-btns .title-menu {
+  display: flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.plats-btns .title-menu .heart {
+  align-self: flex-end;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+.plats-btns .title-menu .heart:hover {
+  align-self: flex-end;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+.plats-btns .title-menu .heart:hover i {
+  padding-top: 3px;
+  padding-right: 10px;
+}
+.plats-btns .title-menu .heart:hover i:hover {
+  color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+  background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+  background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  padding-right: 2px;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
   padding-left: 20px;
   padding-top: 30px;
 }
-.plats-btns h3 {
+
+h3 {
   font-weight: 100;
-  padding-left: 15px;
-  width: 200px;
+  width: 50px;
   position: relative;
   z-index: 1;
+  border-bottom: 3px solid #b5e8db;
 }
-.plats-btns .btn-menu {
+
+.btn-menu {
   font: 14px/2.3em trebuchet, arial;
   color: #353535;
   text-shadow: 0 1px 0 #fff;
@@ -170,35 +223,50 @@ h1 a {
   margin: 3px auto 5px;
   border: 1px solid #ddd;
   border-radius: 20px;
-  -o-box-shadow: 0 3px 5px #ccc;
-  -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0 5px 5px #ccc;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   background-color: white;
   height: 65px;
   padding-top: 30px;
-  transition: 0.2s;
   margin-bottom: 15px;
   width: 350px;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
 }
-.plats-btns .btn-menu .text-menu {
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.btn-menu .text-menu {
   flex-flow: column wrap;
-  line-height: 13px;
+  line-height: 25px;
   justify-content: center;
   width: 100%;
   cursor: pointer;
   display: inline-block;
   position: relative;
   text-overflow: ellipsis;
+  padding-bottom: 10px;
 }
-.plats-btns .btn-menu .text-menu h4 {
+.btn-menu .text-menu h4 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -206,7 +274,7 @@ h1 a {
   margin: 0;
   text-align: left;
 }
-.plats-btns .btn-menu .text-menu .descriptif-menu {
+.btn-menu .text-menu .descriptif-menu {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -214,35 +282,250 @@ h1 a {
   justify-content: space-between;
   width: 100%;
 }
-.plats-btns .btn-menu .text-menu .descriptif-menu .animation-rect {
+.btn-menu .text-menu .descriptif-menu .animation-rect {
   display: center;
+  display: flex;
   margin: -38px -120px -10px 10px;
-  width: 70px;
-  height: 63px;
+  width: 60px;
+  height: 65px;
   background-color: #99E2D0;
-  transition: 0.3s linear;
 }
-.plats-btns .btn-menu .text-menu .descriptif-menu .animation-rect i {
+.btn-menu .text-menu .descriptif-menu .animation-rect i {
   color: white;
-  margin-top: 25%;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  display: flex;
+  align-self: center;
+  padding-left: 25%;
 }
-.plats-btns .btn-menu .text-menu .descriptif-menu p {
+.btn-menu .text-menu .descriptif-menu .tartare {
+  width: 45%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .puree {
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .revisite2 {
+  width: 70%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .gnocchis {
+  width: 10%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .petales {
+  width: 45%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .myrtilles {
+  width: 35%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .magret {
+  width: 15%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .carotte {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .revisite {
+  width: 70%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu p {
   font-weight: bold;
   align-self: flex-end;
   text-align: right;
 }
-.plats-btns .btn-menu:last-child {
+.btn-menu:last-child {
   margin-bottom: 0px;
 }
-.plats-btns .btn-menu:hover .text-menu h4 {
+
+.dish-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-2 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-3 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-4 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-5 {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-6 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-7 {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-8 {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dish-9 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-menu:hover .text-menu h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.plats-btns .btn-menu:hover .text-menu .descriptif-menu p {
+.btn-menu:hover .text-menu .descriptif-menu .tartare {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .carotte {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .gnocchis {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .magret {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .myrtilles {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .puree {
+  width: 25%;
+  text-align: left;
+  font-weight: bold;
+}
+.btn-menu:hover .text-menu .descriptif-menu .petales {
+  width: 25%;
+  text-align: left;
+  font-weight: bold;
+}
+.btn-menu:hover .text-menu .descriptif-menu .revisite {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu .revisite2 {
+  width: 25%;
+  text-align: left;
+}
+.btn-menu:hover .text-menu .descriptif-menu p {
   transform: translateX(-60px);
   transition: 0.3s ease-in-out;
   white-space: nowrap;
@@ -252,7 +535,30 @@ h1 a {
   position: relative;
   left: 30px;
 }
-.plats-btns .btn-menu:hover .text-menu .descriptif-menu span {
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect {
+  background: #99E2D0;
+  transform: translateX(-100px);
+  border-radius: 0 20px 20px 0;
+  transition-duration: 1s;
+}
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
+  color: white;
+  align-self: center;
+  padding-left: 25%;
+  transform: rotate(180deg);
+}
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect:hover {
+  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+}
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect:hover i {
+  color: white;
+  align-self: center;
+  padding-left: 25%;
+  transform: rotate(180deg);
+  transition-duration: 0.2s;
+}
+.btn-menu:hover .text-menu .descriptif-menu span {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -260,13 +566,43 @@ h1 a {
   text-align: left;
   text-align: justify;
 }
-.plats-btns .btn-menu:hover .animation-rect {
-  background: red;
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect {
   transform: translateX(-100px);
   border-radius: 0 20px 20px 0;
 }
-.plats-btns .btn-menu:hover .animation-rect i {
-  transition: all 0.3s ease-in-out 2s;
+.btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
+  color: white;
+  align-self: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  -webkit-animation-name: quarterspin 0.8s ease-in;
+          animation-name: quarterspin 0.8s ease-in;
+  transform-origin: center;
+  transition-duration: 0.6s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 1);
+}
+@-webkit-keyframes quarterspin {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
 }
 
 .btn-cmder {

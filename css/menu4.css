@@ -113,6 +113,24 @@ footer i {
   padding-right: 12px;
 }
 
+header .header_arrow i {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #000;
+}
+header .header_arrow h1 a {
+  color: black;
+  text-decoration: none;
+}
+
 /*BACKGROUND*/
 .main {
   background-color: #f6f6f6;
@@ -131,26 +149,8 @@ footer i {
      object-fit: cover;
 }
 .block-image #img-menu {
-  -o-object-position: center;
-     object-position: center;
-}
-
-header .header_arrow i {
-  position: absolute;
-  left: 2rem;
-  height: 2rem;
-  width: 2rem;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: #000;
-}
-header .header_arrow h1 a {
-  color: black;
-  text-decoration: none;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .plats-btns {
@@ -205,19 +205,13 @@ h2 {
 
 h3 {
   font-weight: 100;
-  border-bottom: 3px solid #b5e8db;
   width: 50px;
+  position: relative;
+  z-index: 1;
+  border-bottom: 3px solid #b5e8db;
 }
 
-.wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  width: 100%;
-  justify-items: center;
-  gap: 2em;
-  justify-content: center;
-}
-.wrapper-grid .btn-menu {
+.btn-menu {
   font: 14px/2.3em trebuchet, arial;
   color: #353535;
   text-shadow: 0 1px 0 #fff;
@@ -242,104 +236,6 @@ h3 {
   text-overflow: ellipsis;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-}
-.wrapper-grid .text-menu {
-  flex-flow: column wrap;
-  line-height: 25px;
-  justify-content: center;
-  width: 100%;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  text-overflow: ellipsis;
-  padding-bottom: 10px;
-}
-.wrapper-grid .text-menu h4 {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: -1px;
-  margin: 0;
-  text-align: left;
-}
-.wrapper-grid .text-menu .descriptif-menu {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.wrapper-grid .text-menu .descriptif-menu .animation-rect {
-  display: center;
-  display: flex;
-  margin: -38px -120px -10px 10px;
-  width: 60px;
-  height: 65px;
-  background-color: #99E2D0;
-}
-.wrapper-grid .text-menu .descriptif-menu .animation-rect i {
-  color: white;
-  display: flex;
-  align-self: center;
-  padding-left: 25%;
-}
-.wrapper-grid .text-menu .descriptif-menu .truffe {
-  width: 10%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .blini {
-  width: 25%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .orange {
-  width: 30%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .celeri {
-  width: 30%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .patate {
-  width: 40%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .riz {
-  width: 20%;
-  text-align: right;
-  align-items: center;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .glace {
-  width: 2%;
-  padding-right: 35px;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .coulis {
-  width: 38%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu .citron {
-  width: 60%;
-  text-align: right;
-  font-weight: bold;
-}
-.wrapper-grid .text-menu .descriptif-menu p {
-  font-weight: bold;
-}
-.wrapper-grid:last-child {
-  margin-bottom: 0px;
-}
-
-.dish-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
   -webkit-animation: fadein 2s;
           animation: fadein 2s;
 }
@@ -350,6 +246,116 @@ h3 {
   to {
     opacity: 1;
   }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.btn-menu .text-menu {
+  flex-flow: column wrap;
+  line-height: 25px;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+}
+.btn-menu .text-menu h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -1px;
+  margin: 0;
+  text-align: left;
+}
+.btn-menu .text-menu .descriptif-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-menu .text-menu .descriptif-menu .animation-rect {
+  display: center;
+  display: flex;
+  margin: -38px -120px -10px 10px;
+  width: 60px;
+  height: 65px;
+  background-color: #99E2D0;
+}
+.btn-menu .text-menu .descriptif-menu .animation-rect i {
+  color: white;
+  align-self: center;
+  padding-left: 25%;
+  transform: rotate(90deg);
+  transition-duration: 0.5s;
+}
+.btn-menu .text-menu .descriptif-menu .thon {
+  width: 45%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .legumes {
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .cepes {
+  width: 65%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .poulet {
+  width: 45%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .saison {
+  width: 35%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .panais {
+  width: 45%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .farandole {
+  width: 70%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .creme {
+  width: 70%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu .tiramisu {
+  width: 65%;
+  text-align: right;
+  font-weight: bold;
+}
+.btn-menu .text-menu .descriptif-menu p {
+  font-weight: bold;
+  align-self: flex-end;
+  text-align: right;
+}
+.btn-menu:last-child {
+  margin-bottom: 0px;
+}
+
+.dish-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
 }
 @keyframes fadein {
   from {
@@ -484,43 +490,39 @@ h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.btn-menu:hover .text-menu .descriptif-menu .truffe {
+.btn-menu:hover .text-menu .descriptif-menu .tiramisu {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .blini {
+.btn-menu:hover .text-menu .descriptif-menu .creme {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .orange {
+.btn-menu:hover .text-menu .descriptif-menu .farandole {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .confiture {
+.btn-menu:hover .text-menu .descriptif-menu .panais {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .celeri {
+.btn-menu:hover .text-menu .descriptif-menu .saison {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .patate {
+.btn-menu:hover .text-menu .descriptif-menu .poulet {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .riz {
+.btn-menu:hover .text-menu .descriptif-menu .legumes {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .coulis {
+.btn-menu:hover .text-menu .descriptif-menu .cepes {
   width: 25%;
   text-align: left;
 }
-.btn-menu:hover .text-menu .descriptif-menu .citron {
-  width: 25%;
-  text-align: left;
-}
-.btn-menu:hover .text-menu .descriptif-menu .glace {
+.btn-menu:hover .text-menu .descriptif-menu .thon {
   width: 25%;
   text-align: left;
 }
@@ -588,4 +590,4 @@ h3 {
 .btn-cmder .Commander {
   margin-top: 50px;
   margin-bottom: 80px;
-}/*# sourceMappingURL=menu2.css.map */
+}/*# sourceMappingURL=menu4.css.map */

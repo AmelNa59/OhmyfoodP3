@@ -25,3 +25,11 @@ html, body {
         font-weight: 300;
         margin:15px;  
     }
+
+    
+   .gradient-purple{       
+    background: #E78FE1;
+    background: -moz-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+    background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+      }

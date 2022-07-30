@@ -21,7 +21,7 @@
     gap:2em;
     justify-content: center;
 }
-@mixin btn{
+@mixin btn1{
             
     font: 14px/2.3em trebuchet,arial;
     color: #353535;
@@ -38,11 +38,7 @@
     -o-border-radius: 20px;
     -ms-border-radius: 20px;
     border-radius: 20px;
-    -moz-box-shadow: 0 3px 5px #ccc;
-    -webkit-box-shadow: 0 3px 5px #ccc;
-    -o-box-shadow: 0 3px 5px #ccc;
-    -ms-box-shadow: 0 3px 5px #ccc;
-    box-shadow: 0 3px 5px #ccc;
+    box-shadow:0 5px 5px #ccc;
 }
 
 @mixin btn-steps{
@@ -132,6 +128,7 @@ object-fit: cover;
 @mixin span-restaurants{
     font-size: 20px;
     padding-left: 5px;
+    font-family:'Roboto';
 }
 
 @mixin block-image{

@@ -4,31 +4,30 @@
 @import "./composants/composants";
 @import "./layouts/header";
 @import "./layouts/footer";
-
 header{
-.header_arrow{
-
-    i{
-        position: absolute;
-        left: 2rem;
-        height: 2rem;
-        width: 2rem;
-        top: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #000;
+    .header_arrow{
+    
+        i{
+            position: absolute;
+            left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #000;
+        }
+    h1{
+        a{
+            color:black;
+            text-decoration: none;
+        }
     }
-h1{
-    a{
-        color:black;
-        text-decoration: none;
     }
-}
-}
-}
+    }
 /*BACKGROUND*/
 .main{
     background-color: #f6f6f6;
@@ -47,6 +46,7 @@ h1{
             margin-top:210px;
             padding-left: 25px;
             padding-right: 25px;
+            
             .title-menu{
                 display:flex;
                 @include flex_row;
@@ -84,7 +84,7 @@ h1{
                     }
                 }
                 }
-            }      
+            }  
   
 
 
@@ -97,12 +97,11 @@ h1{
             }
             h3{
                 font-weight: 100;
- 
+            
                 width   : 50px; 
                 position: relative;
                 z-index : 1;
                 border-bottom: 3px solid #b5e8db;
-            
             }
 
 
@@ -151,7 +150,6 @@ h1{
                     justify-content: space-between;
                     width:100%;
 
-                  
                     .animation-rect{
                         display:center;
                         display:flex;
@@ -169,55 +167,60 @@ h1{
                             }
                         }
 
-                    .tartare{
-                        width:45%;
-                        text-align: right;
-                        font-weight: bold;
-                        
-                    }
-
-                    .puree{
-                        font-weight: bold;
-                    }
-
-                    .revisite2{
-                        width:70%;
+                    .piment{
+                        width:40%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .gnocchis{
+
+                    .canard{
+                        width:25%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                    .oeuf{
                         width:10%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .petales{
-                        width:45%;
+                    .boeuf{
+                        width:9%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .myrtilles{
-                        width:35%;
+                    .parmentier{
+                        width:5%;
                         text-align: right;
                         font-weight: bold;
                     }
-                    .magret{
-                        width:15%;
+                    .turbot{
+                        width:60%;
                         text-align: right;
                         font-weight: bold;
-
                     }
                     .carotte{
-                        width:30%;
+                        width:25%;
                         text-align: right;
                         font-weight: bold;
-                        
                     }
 
-                    .revisite{
+                    .paris{
                         width:70%;
                         text-align: right;
                         font-weight: bold;
-                        
+                    }
+
+                    
+                    .macaron{
+                        width:15%;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+
+                    .mousse{
+                        width:10%;
+                        text-align: right;
+                        font-weight: bold;
                     }
               
                         p{
@@ -384,55 +387,53 @@ h1{
     }
         .descriptif-menu{
        
-            .tartare{
+            .piment{
                 width:25%;
                 text-align: left;
                 
             }
-            .carotte{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .gnocchis{
-                width:25%;
-                text-align: left;
-                
-            }
-            .magret{
-                width:25%;
-                text-align: left;
-                
-            }
-            .myrtilles{
+            .canard{
                 width:25%;
                 text-align: left;
                 
             }
 
-            .puree{
+            .oeuf{
                 width:25%;
                 text-align: left;
-                font-weight: bold;
+                
+            }
+            .boeuf{
+                width:25%;
+                text-align: left;
+                
+            }
+            .parmentier{
+                width:25%;
+                text-align: left;
                 
             }
 
-            .petales{
+            .turbot{
                 width:25%;
                 text-align: left;
-                font-weight: bold;
                 
             }
 
-            .revisite{
+            .paris{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .macaron{
                 width:25%;
                 text-align: left;
                 
             }
 
             
-            .revisite2{
+            .mousse{
                 width:25%;
                 text-align: left;
                 
@@ -449,38 +450,7 @@ h1{
                 left:30px;
                 
             }
-        
-    .animation-rect{
-          
-        background:#99E2D0;
-        transform: translateX(-100px);
-        border-radius: 0 20px 20px 0;    
-        transition-duration: 1s;
 
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform:rotate(180deg);
-   
-     
-        }
-    }
-    .animation-rect:hover{
-          
-        background:#99E2D0;
-     
-        border-radius: 0 20px 20px 0;    
-
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform: rotate(180deg);
-            transition-duration: .2s;
-
-        }
-    }
             span{
     
             

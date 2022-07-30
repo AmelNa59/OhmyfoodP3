@@ -9,6 +9,8 @@
 /*BACKGROUND*/
 .main{
     background-color: #f6f6f6;
+
+    
 }
 .block-image{
    @include block-image;
@@ -17,12 +19,77 @@
    }
 }
 
+header{
+    .header_arrow{
+    
+        i{
+            position: absolute;
+            left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #000;
+        }
+    h1{
+        a{
+            color:black;
+            text-decoration: none;
+        }
+    }
+    }
+    }
 .plats-btns{
     background-color:#f6f6f6;
     margin-top: 0;
     border-radius: 50px 50px 0 0;
     position:relative;
     margin-top:210px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    .title-menu{
+        display:flex;
+        @include flex_row;
+        align-items: center;
+        justify-content: space-between;
+
+        .heart{
+            align-self: flex-end;
+             font-size: 12px;
+            padding-bottom: 8px;
+}
+
+        .heart:hover{
+            align-self: flex-end;
+            font-size: 12px;
+            padding-bottom: 8px;
+
+            i{
+                padding-top: 3px;
+                padding-right: 10px;
+        
+            }
+            i:hover{
+                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                font-weight:bold;
+                padding-right: 2px;
+                -webkit-text-fill-color: transparent;
+          
+                
+        
+            }
+        }
+        }
+    }  
 
     h2{
         font-family:$header-ffamily;
@@ -33,26 +100,47 @@
     }
     h3{
         font-weight: 100;
-        padding-left: 15px;
+    
+        border-bottom: 3px solid #b5e8db;
+        width:50px; 
 
 
 
     }
-}
+
+
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    width: 100%;
+    justify-items: center;
+    gap: 2em;
+    justify-content: center;
+  
 .btn-menu{
-    @include btn;
+    @include btn1;
     @include flex-column;
     background-color: white;
     height: 65px;
     padding-top:30px;
     margin-bottom: 15px;
     width:350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation-fill-mode: both;
+  
+    }
 
     .text-menu{
         flex-flow: column wrap;      
-        line-height: 10px;
+        line-height: 25px;
         justify-content: center;
         width: 100%;
+        cursor:pointer;
+        display: inline-block;
+        position:relative;
+        text-overflow: ellipsis;
+        padding-bottom: 10px;
 
         h4{
          @include h4_font;
@@ -62,6 +150,81 @@
             @include flex_row;
             justify-content: space-between;
             width:100%;
+
+            .animation-rect{
+                display:center;
+                display:flex;
+                margin:-38px -120px -10px 10px;
+                 width: 60px;
+                 height: 65px;
+                background-color: #99E2D0;
+             
+                    i{
+                    color: white;
+                    display: flex;
+                    align-self: center;
+                    padding-left: 25%;
+                
+                    }
+                }
+
+                .truffe{
+                    width:10%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+
+                .blini{
+                    width:25%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+
+                
+                .orange{
+                    width:30%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+
+                .celeri{
+                    width:30%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+
+                .patate{
+                    width:40%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+
+                
+                .riz{
+                    width:20%;
+                 
+                    text-align: right;
+                    align-items:center;
+                    font-weight: bold;
+                }
+
+                .glace{
+                    width: 2%;
+                   padding-right: 35px;
+                   font-weight: bold;
+                }
+
+                
+                .coulis{
+                    width:38%;
+                    text-align: right;
+                    font-weight: bold;
+                }
+                .citron{
+                    width:60%;
+                    text-align: right;
+                    font-weight: bold;
+                }
                 p{
                     font-weight: bold;
                 }
@@ -73,20 +236,278 @@
           
         }
         }
-  
+        .dish-1{
+            animation-delay: 0.1s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+            
+        }
+        .dish-2{
+            animation-delay: 0.5s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+    
+            }
+        
+        .dish-3{
+            animation-delay: 0.9s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        }
+        
+        .dish-4{
+            animation-delay: 1.4s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+                
+            }
+        
+        .dish-5{
+            animation-delay: 1.9s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        
+        }
+        .dish-6{
+            animation-delay: 2.4s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        }
+        .dish-7{
+            animation-delay:2.9s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        }
+        .dish-8{
+            animation-delay: 3.4s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        }
+        .dish-9{
+            animation-delay: 4s;
+            animation: fadein 2s;
+       
+        
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        }
+
+        
+.btn-menu:hover{
+    
+
+    .text-menu{
+
+    h4{
+        
+        white-space: nowrap;
+        text-overflow : ellipsis;
+     
+    }
+        .descriptif-menu{
+       
+            .truffe{
+                width:25%;
+                text-align: left;
+                
+            }
+            .blini{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .orange{
+                width:25%;
+                text-align: left;
+                
+            }
+            .confiture{
+                width:25%;
+                text-align: left;
+                
+            }
+            .celeri{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .patate{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .riz{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .coulis{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            
+            .citron{
+                width:25%;
+                text-align: left;
+                
+            }
+
+            .glace{
+                width:25%;
+                text-align: left;
+                
+            }
+            p{
+                transform: translateX(-60px);
+           
+                transition: 0.3s ease-in-out;   
+                white-space: nowrap;
+                text-overflow : ellipsis;
+                overflow: hidden;
+                float:right;
+                position:relative;
+                left:30px;
+                
+            }
+
+            span{
+    
+            
+                white-space: nowrap;
+                text-overflow : ellipsis;
+                overflow: hidden;
+                width:200px;
+                text-align: left;
+                text-align: justify; 
+               
+               
+            }
+
+            .animation-rect{
+                transform: translateX(-100px);
+                border-radius: 0 20px 20px 0;    
+        
+                i{
+                    color: white;
+                    align-self: center;
+                    padding-left: 25%;
+                    padding-right: 25%;
+                    animation-name: quarterspin .8s ease-in;
+                    transform-origin:center;
+                    transition-duration: 0.6s;
+                    animation-duration: 1s;
+                    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45,1);
+                    @keyframes quarterspin {
+                        0%{
+                            transform: rotate(-360deg);
+                            opacity: 1;
+                        }
+                        100%{
+                            transform:rotate(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        
+
+
+}
+        
     .btn-cmder{
         background-color: #f6f6f6;
         text-align: center;
 
         .Commander{
-            
-    @include grad-button-purple;
-    @include grad-button;
     margin-top: 50px;
     margin-bottom: 80px;
         }
     }
 
-    .wrapper-grid{
-        @include wrapper-grid;
-    }
+ 

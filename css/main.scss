@@ -50,8 +50,14 @@
         }
 
         .button{
-            box-shadow: 0 3px 5px #ccc;
+            box-shadow:0 5px 5px #ccc;
 
+        }
+
+        a{
+            text-decoration: none;
+            color:white;
+            font-family:$main-ffamily;
         }
         }
 
@@ -66,30 +72,8 @@
                 margin:30px;
             }
             .wrapper-grid{
-                .button {
-                    font: 14px/2.3em trebuchet,arial;
-                    color: #353535;
-                    text-shadow: 0 1px 0 #fff;
-                    text-align: center;
-                    text-decoration: none;
-                    display: block;
-                    padding: 25px 15px;
-                    width:320px;
-                    position:relative;
-                    margin: 3px auto 5px;
-                
-                    border: 1px solid #ddd;
-                    -moz-border-radius: 20px;
-                    -webkit-border-radius: 20px;
-                    -o-border-radius: 20px;
-                    -ms-border-radius: 20px;
-                    border-radius: 20px;
-                    -moz-box-shadow: 0 3px 5px #ccc;
-                    -webkit-box-shadow: 0 3px 5px #ccc;
-                    -o-box-shadow: 0 3px 5px #ccc;
-                    -ms-box-shadow: 0 3px 5px #ccc;
-                    box-shadow: 0 3px 5px #ccc;
-
+                .btn1{
+   
                     .number{
                         counter-increment: compteListe 1;
                         content: counter(compteListe) " ";
@@ -115,8 +99,13 @@
                             
                         }
 
-                .btn1:hover{
+            .btn1:hover{
                     box-shadow:0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+                        
+                }
+
+                .btn1:last-child{
+                   background-color: #f5edff;
                         
                 }
         }
@@ -162,7 +151,7 @@
                     font-size:15px;
                     top:3px;
                     position: absolute;
-                    font-family: $main-ffamily;
+                    font-family: 'Roboto';
                 }
             }
 
@@ -176,6 +165,7 @@
             }
            #palettegout_img {
             @include img();
+            object-position: bottom;
             }
 
             .descriptif_palette{
@@ -211,6 +201,7 @@
 
             span{
                 @include span-restaurants();
+                font-family: 'Roboto';
             }
             }
 
@@ -239,7 +230,7 @@
                     font-size:15px;
                     top:3px;
                     position: absolute;
-                    font-family: $main-ffamily;
+                    font-family:'Roboto';
                 }
             }
             a{
@@ -291,6 +282,8 @@
 
             span{
                 @include span-restaurants();
+                font-family: 'Roboto';
+               
             }
             }
                 }
@@ -317,6 +310,7 @@
             
             #française_img {
             @include img();
+            object-position:bottom;
             }
 
         .descriptif_française{
@@ -353,6 +347,7 @@
 
         span{
             @include span-restaurants();
+            font-family: 'Roboto';
         }
 
         }
@@ -421,6 +416,7 @@
 
         span{
             @include span-restaurants();
+            font-family: 'Roboto';
         }
     }
         }

@@ -162,11 +162,19 @@ footer i {
   background: #E78FE1;
   background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   margin-bottom: 60px;
-  box-shadow: 0.25rem 0.25rem 10pxrgba 0, 0, 0, 0.25;
+  box-shadow: 0 5px 5px #ccc;
 }
 .hero button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
+
+.hero a{
+  text-decoration: none;
+  color:white;
+  font-family:"Roboto", sans-serif;
+
+}
+
 
 /*SECTION STEPS*/
 .steps {
@@ -212,6 +220,18 @@ footer i {
   -ms-box-shadow: 0 3px 5px #ccc;
   box-shadow: 0 3px 5px #ccc;
 }
+
+.steps .wrapper-grid .btn1 i{
+  padding-right:20px;
+  font-size:20px;
+  color:#848484;
+}
+
+.steps .wrapper-grid .btn1 i:last-child{
+  padding-right:20px;
+  font-size:20px;
+  color:#9356dc;
+}
 .steps .wrapper-grid .btn1 .number {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
@@ -233,6 +253,14 @@ footer i {
 }
 .steps .btn1:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.steps .btn1:last-child {
+  background-color: #f5edff;
+}
+
+.steps .btn1:last-child i{
+  color:#9559dd;
 }
 
 /*SECTION RESTAURANTS*/
