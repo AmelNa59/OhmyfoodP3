@@ -152,7 +152,7 @@ header{
             width:100%;
 
             .animation-rect{
-                display:center;
+             
                 display:flex;
                 margin:-38px -120px -10px 10px;
                  width: 60px;
@@ -211,6 +211,12 @@ header{
                 .glace{
                     width: 2%;
                    padding-right: 35px;
+                   font-weight: bold;
+                }
+
+                .confiture{
+                    width: 36%;
+                   padding-left: 45px;
                    font-weight: bold;
                 }
 
@@ -476,7 +482,7 @@ header{
                     align-self: center;
                     padding-left: 25%;
                     padding-right: 25%;
-                    animation-name: quarterspin .8s ease-in;
+                    animation: quarterspin .8s ease-in;
                     transform-origin:center;
                     transition-duration: 0.6s;
                     animation-duration: 1s;

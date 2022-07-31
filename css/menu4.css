@@ -283,7 +283,6 @@ h3 {
   width: 100%;
 }
 .btn-menu .text-menu .descriptif-menu .animation-rect {
-  display: center;
   display: flex;
   margin: -38px -120px -10px 10px;
   width: 60px;
@@ -294,7 +293,7 @@ h3 {
   color: white;
   align-self: center;
   padding-left: 25%;
-  transform: rotate(90deg);
+  transform: rotate(10deg);
   transition-duration: 0.5s;
 }
 .btn-menu .text-menu .descriptif-menu .thon {
@@ -553,8 +552,8 @@ h3 {
   align-self: center;
   padding-left: 25%;
   padding-right: 25%;
-  -webkit-animation-name: quarterspin 0.8s ease-in;
-          animation-name: quarterspin 0.8s ease-in;
+  -webkit-animation: quarterspin 0.8s ease-in;
+          animation: quarterspin 0.8s ease-in;
   transform-origin: center;
   transition-duration: 0.6s;
   -webkit-animation-duration: 1s;

@@ -113,23 +113,11 @@ h1{
             height: 65px;
             padding-top:30px;
             margin-bottom: 15px;
-            width:350px;
+            width:340px;
             overflow: hidden;
             text-overflow: ellipsis;
-            animation-fill-mode: both;
-            animation: fadein 2s;
-           
-           
-        
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-
+            transform: scale(0);    
+            animation-fill-mode:both;
 
             .text-menu{
                 flex-flow: column wrap;      
@@ -153,7 +141,7 @@ h1{
 
                   
                     .animation-rect{
-                        display:center;
+                        
                         display:flex;
                         margin:-38px -120px -10px 10px;
                          width: 60px;
@@ -238,137 +226,64 @@ h1{
 
         
             .dish-1{
-                animation-delay: 0.1s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
+                animation:slide-in 1s linear forwards;
+                animation-duration: 0.3s;
+
             }
                 
-            }
             .dish-2{
-                animation-delay: 0.5s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.1s linear forwards;
+                animation-duration: 0.3s;
         
                 }
             
             .dish-3{
-                animation-delay: 0.9s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.2s linear forwards;
+                animation-duration: 0.3s;
+   
             }
             
             .dish-4{
-                animation-delay: 1.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.3s linear forwards;
+                animation-duration: 0.3s;
+
                     
                 }
             
             .dish-5{
-                animation-delay: 1.9s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.4s linear forwards;
+                animation-duration: 0.3s;
+
             
             }
             .dish-6{
-                animation-delay: 2.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.5s linear forwards;
+                animation-duration: 0.3s;
+
             }
             .dish-7{
-                animation-delay:2.9s;
-                animation: fadein 2s;
-           
+                animation:slide-in 0.7s 0.6s linear forwards;
+                animation-duration: 0.3s;
             
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+            
             }
             .dish-8{
-                animation-delay: 3.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.7s linear forwards;
+                animation-duration: 0.3s;
+
             }
             .dish-9{
-                animation-delay: 4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
+                animation:slide-in 0.7s 0.8s linear forwards;
+                animation-duration: 0.3s;
+                
             }
+
+            @keyframes slide-in {
+
+                100%{
+                    transform: translateX(0%);
+                }
+                
             }
 
 .btn-menu:hover{
@@ -450,51 +365,6 @@ h1{
                 
             }
         
-    .animation-rect{
-          
-        background:#99E2D0;
-        transform: translateX(-100px);
-        border-radius: 0 20px 20px 0;    
-        transition-duration: 1s;
-
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform:rotate(180deg);
-   
-     
-        }
-    }
-    .animation-rect:hover{
-          
-        background:#99E2D0;
-     
-        border-radius: 0 20px 20px 0;    
-
-        i{
-            color: white;
-            align-self: center;
-            padding-left: 25%;
-            transform: rotate(180deg);
-            transition-duration: .2s;
-
-        }
-    }
-            span{
-    
-            
-                white-space: nowrap;
-                text-overflow : ellipsis;
-                overflow: hidden;
-                width:200px;
-                text-align: left;
-                text-align: justify; 
-               
-               
-            }
-            
-
             .animation-rect{
                 transform: translateX(-100px);
                 border-radius: 0 20px 20px 0;    
@@ -504,7 +374,7 @@ h1{
                     align-self: center;
                     padding-left: 25%;
                     padding-right: 25%;
-                    animation-name: quarterspin .8s ease-in;
+                    animation: quarterspin .8s ease-in;
                     transform-origin:center;
                     transition-duration: 0.6s;
                     animation-duration: 1s;
@@ -521,17 +391,28 @@ h1{
                     }
                 }
             }
+    
+
+
+    }
+            span{
+    
             
+                white-space: nowrap;
+                text-overflow : ellipsis;
+                overflow: hidden;
+                width:200px;
+                text-align: left;
+                text-align: justify; 
+               
+               
+            }
+             
         }
        
         }
 
-
-}
-
-   
-        
-            
+ 
             .btn-cmder{
                 background-color: #f6f6f6;
                 text-align: center;

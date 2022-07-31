@@ -231,29 +231,12 @@ h3 {
   height: 65px;
   padding-top: 30px;
   margin-bottom: 15px;
-  width: 350px;
+  width: 340px;
   overflow: hidden;
   text-overflow: ellipsis;
+  transform: scale(0);
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .btn-menu .text-menu {
   flex-flow: column wrap;
@@ -283,7 +266,6 @@ h3 {
   width: 100%;
 }
 .btn-menu .text-menu .descriptif-menu .animation-rect {
-  display: center;
   display: flex;
   margin: -38px -120px -10px 10px;
   width: 60px;
@@ -349,140 +331,79 @@ h3 {
 }
 
 .dish-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 1s linear forwards;
+          animation: slide-in 1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-2 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.1s linear forwards;
+          animation: slide-in 0.7s 0.1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-3 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.2s linear forwards;
+          animation: slide-in 0.7s 0.2s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-4 {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.3s linear forwards;
+          animation: slide-in 0.7s 0.3s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-5 {
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.4s linear forwards;
+          animation: slide-in 0.7s 0.4s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-6 {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.5s linear forwards;
+          animation: slide-in 0.7s 0.5s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-7 {
-  -webkit-animation-delay: 2.9s;
-          animation-delay: 2.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.6s linear forwards;
+          animation: slide-in 0.7s 0.6s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-8 {
-  -webkit-animation-delay: 3.4s;
-          animation-delay: 3.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.7s linear forwards;
+          animation: slide-in 0.7s 0.7s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-9 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  -webkit-animation: slide-in 0.7s 0.8s linear forwards;
+          animation: slide-in 0.7s 0.8s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+
+@-webkit-keyframes slide-in {
+  100% {
+    transform: translateX(0%);
   }
 }
 
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
 .btn-menu:hover .text-menu h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -536,37 +457,6 @@ h3 {
   left: 30px;
 }
 .btn-menu:hover .text-menu .descriptif-menu .animation-rect {
-  background: #99E2D0;
-  transform: translateX(-100px);
-  border-radius: 0 20px 20px 0;
-  transition-duration: 1s;
-}
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
-  color: white;
-  align-self: center;
-  padding-left: 25%;
-  transform: rotate(180deg);
-}
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect:hover {
-  background: #99E2D0;
-  border-radius: 0 20px 20px 0;
-}
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect:hover i {
-  color: white;
-  align-self: center;
-  padding-left: 25%;
-  transform: rotate(180deg);
-  transition-duration: 0.2s;
-}
-.btn-menu:hover .text-menu .descriptif-menu span {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 200px;
-  text-align: left;
-  text-align: justify;
-}
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect {
   transform: translateX(-100px);
   border-radius: 0 20px 20px 0;
 }
@@ -575,8 +465,8 @@ h3 {
   align-self: center;
   padding-left: 25%;
   padding-right: 25%;
-  -webkit-animation-name: quarterspin 0.8s ease-in;
-          animation-name: quarterspin 0.8s ease-in;
+  -webkit-animation: quarterspin 0.8s ease-in;
+          animation: quarterspin 0.8s ease-in;
   transform-origin: center;
   transition-duration: 0.6s;
   -webkit-animation-duration: 1s;
@@ -603,6 +493,14 @@ h3 {
     transform: rotate(0);
     opacity: 1;
   }
+}
+.btn-menu:hover .text-menu span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+  text-align: left;
+  text-align: justify;
 }
 
 .btn-cmder {

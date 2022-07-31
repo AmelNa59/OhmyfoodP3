@@ -152,7 +152,7 @@ header{
                     width:100%;
 
                     .animation-rect{
-                    display:center;
+          
                     display:flex;
           
                         margin:-38px -120px -10px 10px;
@@ -160,12 +160,11 @@ header{
                         height: 65px;
                         background-color: #99E2D0;
                   
-
                         i{
                         color: white;
                     align-self: center;
                     padding-left: 25%;
-                    transform: rotate(90deg);
+                    transform: rotate(10deg);
                    transition-duration:.5s;
                
              
@@ -475,7 +474,7 @@ header{
                     align-self: center;
                     padding-left: 25%;
                     padding-right: 25%;
-                    animation-name: quarterspin .8s ease-in;
+                    animation: quarterspin .8s ease-in;
                     transform-origin:center;
                     transition-duration: 0.6s;
                     animation-duration: 1s;
