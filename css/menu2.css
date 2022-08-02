@@ -277,17 +277,18 @@ h3 {
   width: 100%;
 }
 .wrapper-grid .text-menu .descriptif-menu .animation-rect {
-  display: flex;
+  display: inline-flex;
   margin: -38px -120px -10px 10px;
   width: 60px;
   height: 65px;
   background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper-grid .text-menu .descriptif-menu .animation-rect i {
   color: white;
   display: flex;
   align-self: center;
-  padding-left: 25%;
 }
 .wrapper-grid .text-menu .descriptif-menu .truffe {
   width: 10%;
@@ -348,63 +349,72 @@ h3 {
 }
 
 .dish-1 {
-  animation: slide-in 1s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-2 {
-  animation: slide-in 0.7s 0.1s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-3 {
-  animation: slide-in 0.7s 0.2s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-4 {
-  animation: slide-in 0.7s 0.3s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-5 {
-  animation: slide-in 0.7s 0.4s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-6 {
-   animation: slide-in 0.7s 0.5s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-7 {
-  animation: slide-in 0.7s 0.6s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-8 {
-  animation: slide-in 0.7s 0.7s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
-  .dish-9 {
-  animation: slide-in 0.7s 0.8s linear forwards;
-  
-            animation-duration: 0.3s;
-  }
-  
+  -webkit-animation: slide-in 1s linear forwards;
+          animation: slide-in 1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-2 {
+  -webkit-animation: slide-in 0.7s 0.1s linear forwards;
+          animation: slide-in 0.7s 0.1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-3 {
+  -webkit-animation: slide-in 0.7s 0.2s linear forwards;
+          animation: slide-in 0.7s 0.2s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-4 {
+  -webkit-animation: slide-in 0.7s 0.3s linear forwards;
+          animation: slide-in 0.7s 0.3s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-5 {
+  -webkit-animation: slide-in 0.7s 0.4s linear forwards;
+          animation: slide-in 0.7s 0.4s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-6 {
+  -webkit-animation: slide-in 0.7s 0.5s linear forwards;
+          animation: slide-in 0.7s 0.5s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-7 {
+  -webkit-animation: slide-in 0.7s 0.6s linear forwards;
+          animation: slide-in 0.7s 0.6s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-8 {
+  -webkit-animation: slide-in 0.7s 0.7s linear forwards;
+          animation: slide-in 0.7s 0.7s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.dish-9 {
+  -webkit-animation: slide-in 0.7s 0.8s linear forwards;
+          animation: slide-in 0.7s 0.8s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
 
 .dish-10 {
-animation: slide-in 0.7s 0.8s linear forwards;
-
+  -webkit-animation: slide-in 0.7s 0.8s linear forwards;
+          animation: slide-in 0.7s 0.8s linear forwards;
+  -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   padding-bottom: 50px;
 }

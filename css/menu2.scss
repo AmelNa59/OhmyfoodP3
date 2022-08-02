@@ -155,20 +155,22 @@ header{
             @include flex_row;
             justify-content: space-between;
             width:100%;
-
+     
             .animation-rect{
-             
-                display:flex;
+                        
+                display:inline-flex;
                 margin:-38px -120px -10px 10px;
                  width: 60px;
                  height: 65px;
                 background-color: #99E2D0;
+                justify-content: center;
+                align-items: center;
              
                     i{
                     color: white;
                     display: flex;
                     align-self: center;
-                    padding-left: 25%;
+                  
                 
                     }
                 }
