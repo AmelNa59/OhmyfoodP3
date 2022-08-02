@@ -301,6 +301,12 @@ header{
             
         }
 
+        .dish-10{
+            animation:slide-in 0.7s 0.8s linear forwards;
+            animation-duration: 0.3s;
+            padding-bottom: 50px;
+            
+        }
         @keyframes slide-in {
 
             100%{
@@ -447,4 +453,6 @@ header{
         }
     }
 
- 
+ .btn-menu:last-child{
+    margin-bottom: 50px;
+ }
