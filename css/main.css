@@ -356,8 +356,8 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 2s;
-  transition-timing-function:ease-out;
+  transition:all 0.5s;
+  
 }
 .restaurants .palette .descriptif_palette h3 {
   font-size: 19px;
@@ -444,7 +444,7 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 1s;
+  transition:all 0.5s;
 }
 .restaurants .note .descriptif_note h3 {
   font-size: 19px;
@@ -518,7 +518,7 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 1s;
+  transition:all 0.5s;
 }
 .restaurants .française .descriptif_française h3 {
   font-size: 19px;
@@ -593,7 +593,7 @@ footer i {
   padding-top: 3px;
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
-  transition:all 1s;
+  transition:all 0.5s;
 }
 .restaurants .delice .descriptif_delice h3 {
   font-size: 19px;

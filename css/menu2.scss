@@ -133,6 +133,7 @@ header{
     animation-fill-mode: both;
     transform: translateY(50px);
     transform: translateY(20%);
+    transition:all 400ms;
   
     }
 
@@ -165,6 +166,7 @@ header{
                 background-color: #99E2D0;
                 justify-content: center;
                 align-items: center;
+                transition:all 400ms;
              
                     i{
                     color: white;
@@ -252,61 +254,106 @@ header{
   
         .dish-1{
             animation:slide-in 1s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
 
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
         }
             
         .dish-2{
              animation:slide-in 0.7s 0.1s linear forwards;
-            animation-duration: 0.3s;
+             box-shadow: 0 3px 5px #ccc;
+    
+             &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
     
             }
         
         .dish-3{
             animation:slide-in 0.7s 0.2s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
+     
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
 
         }
         
         .dish-4{
             animation:slide-in 0.7s 0.3s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
 
                 
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
             }
         
         .dish-5{
             animation:slide-in 0.7s 0.4s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
 
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
         
         }
         .dish-6{
             animation:slide-in 0.7s 0.5s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
 
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
         }
         .dish-7{
             animation:slide-in 0.7s 0.6s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
         
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
         
         }
         .dish-8{
             animation:slide-in 0.7s 0.7s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
+
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
 
         }
         .dish-9{
             animation:slide-in 0.7s 0.8s linear forwards;
-            animation-duration: 0.3s;
+            box-shadow: 0 3px 5px #ccc;
             
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
         }
+            
+    
 
         .dish-10{
             animation:slide-in 0.7s 0.8s linear forwards;
-            animation-duration: 0.3s;
-            padding-bottom: 50px;
+            box-shadow: 0 3px 5px #ccc;
+            
+            &:hover{
+                transition:all 0.5s;
+                box-shadow: 0 10px 5px #ccc;
+            }
             
         }
         @keyframes slide-in {
@@ -317,8 +364,9 @@ header{
             
         }
 .btn-menu:hover{
-    
 
+        transition:all 400ms;
+    
     .text-menu{
 
     h4{
