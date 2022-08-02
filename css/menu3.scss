@@ -117,6 +117,8 @@ header{
             text-overflow: ellipsis;
             animation-fill-mode: both;
             animation: fadein 2s;
+            transform: translateY(20px);
+            transform: translateY(10%);
            
            
         
@@ -240,140 +242,68 @@ header{
             }
 
         
+         
+        
             .dish-1{
-                animation-delay: 0.1s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
+                animation:slide-in 1s linear forwards;
+                animation-duration: 0.3s;
+
             }
                 
-            }
             .dish-2{
-                animation-delay: 0.5s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                 animation:slide-in 0.7s 0.1s linear forwards;
+                animation-duration: 0.3s;
         
                 }
             
             .dish-3{
-                animation-delay: 0.9s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.2s linear forwards;
+                animation-duration: 0.3s;
+   
             }
             
             .dish-4{
-                animation-delay: 1.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.3s linear forwards;
+                animation-duration: 0.3s;
+
                     
                 }
             
             .dish-5{
-                animation-delay: 1.9s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.4s linear forwards;
+                animation-duration: 0.3s;
+
             
             }
             .dish-6{
-                animation-delay: 2.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.5s linear forwards;
+                animation-duration: 0.3s;
+
             }
             .dish-7{
-                animation-delay:2.9s;
-                animation: fadein 2s;
-           
+                animation:slide-in 0.7s 0.6s linear forwards;
+                animation-duration: 0.3s;
             
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+            
             }
             .dish-8{
-                animation-delay: 3.4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.7s linear forwards;
+                animation-duration: 0.3s;
+
             }
             .dish-9{
-                animation-delay: 4s;
-                animation: fadein 2s;
-           
-            
-            @keyframes fadein {
-                from {
-                    opacity:0;
-                }
-                to {
-                    opacity:1;
-                }
-            }
+                animation:slide-in 0.7s 0.8s linear forwards;
+                animation-duration: 0.3s;
+                
             }
 
+            @keyframes slide-in {
+
+                100%{
+                    transform: translateX(0%);
+                }
+                
+            }
 .btn-menu:hover{
     
 

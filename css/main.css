@@ -356,7 +356,8 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 1s;
+  transition:all 2s;
+  transition-timing-function:ease-out;
 }
 .restaurants .palette .descriptif_palette h3 {
   font-size: 19px;

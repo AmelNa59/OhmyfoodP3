@@ -218,8 +218,6 @@ h3 {
   color: #353535;
   text-shadow: 0 1px 0 #fff;
   text-align: center;
-
-  transform: translateY(10%);
   text-decoration: none;
   display: block;
   padding: 15px 15px;
@@ -243,6 +241,8 @@ h3 {
           animation-fill-mode: both;
   -webkit-animation: fadein 2s;
           animation: fadein 2s;
+  transform: translateY(20px);
+  transform: translateY(10%);
 }
 @-webkit-keyframes fadein {
   from {
@@ -293,7 +293,6 @@ h3 {
   width: 60px;
   height: 65px;
   background-color: #99E2D0;
-  transition:all 400ms;
 }
 .btn-menu .text-menu .descriptif-menu .animation-rect i {
   color: white;
@@ -361,140 +360,79 @@ h3 {
 }
 
 .dish-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 1s linear forwards;
+          animation: slide-in 1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-2 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.1s linear forwards;
+          animation: slide-in 0.7s 0.1s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-3 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.2s linear forwards;
+          animation: slide-in 0.7s 0.2s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-4 {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.3s linear forwards;
+          animation: slide-in 0.7s 0.3s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-5 {
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.4s linear forwards;
+          animation: slide-in 0.7s 0.4s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-6 {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.5s linear forwards;
+          animation: slide-in 0.7s 0.5s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-7 {
-  -webkit-animation-delay: 2.9s;
-          animation-delay: 2.9s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.6s linear forwards;
+          animation: slide-in 0.7s 0.6s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-8 {
-  -webkit-animation-delay: 3.4s;
-          animation-delay: 3.4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  -webkit-animation: slide-in 0.7s 0.7s linear forwards;
+          animation: slide-in 0.7s 0.7s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .dish-9 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  -webkit-animation: slide-in 0.7s 0.8s linear forwards;
+          animation: slide-in 0.7s 0.8s linear forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+
+@-webkit-keyframes slide-in {
+  100% {
+    transform: translateX(0%);
   }
 }
 
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
 .btn-menu:hover .text-menu h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -556,7 +494,6 @@ h3 {
 .btn-menu:hover .text-menu .descriptif-menu .animation-rect {
   transform: translateX(-100px);
   border-radius: 0 20px 20px 0;
-  transition:all 400ms;
 }
 .btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
   color: white;
