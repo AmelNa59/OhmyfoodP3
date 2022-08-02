@@ -70,6 +70,7 @@ p {
   cursor: pointer;
   font-size: 16px;
   color: white;
+  transition: all 400ms;
 }
 
 header {
@@ -102,6 +103,7 @@ footer p {
   font-size: 18px;
   margin: 2px;
   padding-bottom: 10px;
+  text-align: left;
 }
 footer a {
   text-decoration: none;
@@ -234,14 +236,19 @@ h3 {
   flex-flow: column wrap;
   justify-content: center;
   background-color: white;
+
+  transform: translateY(10%);
   height: 65px;
   padding-top: 30px;
   margin-bottom: 15px;
+  transition:all 400ms;
   width: 350px;
+  transition:all 400ms;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+          
 }
 .wrapper-grid .text-menu {
   flex-flow: column wrap;
@@ -276,6 +283,7 @@ h3 {
   width: 60px;
   height: 65px;
   background-color: #99E2D0;
+  transition:all 400ms;
 }
 .wrapper-grid .text-menu .descriptif-menu .animation-rect i {
   color: white;
@@ -549,6 +557,7 @@ h3 {
 .btn-menu:hover .text-menu .descriptif-menu .animation-rect {
   transform: translateX(-100px);
   border-radius: 0 20px 20px 0;
+  transition:all 400ms;
 }
 .btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
   color: white;

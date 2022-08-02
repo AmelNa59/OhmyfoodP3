@@ -47,6 +47,7 @@ h1{
             margin-top:210px;
             padding-left: 25px;
             padding-right: 25px;
+
             .title-menu{
                 display:flex;
                 @include flex_row;
@@ -118,6 +119,8 @@ h1{
             text-overflow: ellipsis;
             transform: scale(0);    
             animation-fill-mode:both;
+            transform: translateY(20px);
+            transform: translateY(10%);
 
             .text-menu{
                 flex-flow: column wrap;      

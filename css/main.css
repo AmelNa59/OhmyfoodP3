@@ -11,13 +11,13 @@ html, body {
 
 .loader{
   position: fixed;
-background-color:black;
+background-color:white;
   height:100vh;
   display: grid;
   place-items: center;
   inset:0;
   z-index:10000;
-  opacity:0.9;
+  opacity:0.8;
   animation: loader .01s;
   transform-origin: top;
   animation-duration: .5s;
@@ -163,6 +163,7 @@ footer i {
   background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   margin-bottom: 60px;
   box-shadow: 0 5px 5px #ccc;
+  transition:all 400ms;
 }
 .hero button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
@@ -253,15 +254,15 @@ footer i {
 }
 .steps .btn1:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.steps .btn1:last-child {
+  transition:all 400ms;
   background-color: #f5edff;
+  transition:all 400ms;
 }
 
-.steps .btn1:last-child i{
-  color:#9559dd;
+.steps .btn1:hover i {
+  color:#9356dc;
 }
+
 
 /*SECTION RESTAURANTS*/
 .restaurants {
@@ -316,6 +317,7 @@ footer i {
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
+  transition:all 400ms;
 }
 .restaurants .palette #palettegout_img {
   height: 185px;
@@ -342,6 +344,7 @@ footer i {
 .restaurants .palette .descriptif_palette .heart i {
   padding-top: 3px;
   padding-right: 10px;
+
 }
 .restaurants .palette .descriptif_palette .heart i:hover {
   color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
@@ -353,6 +356,7 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition:all 1s;
 }
 .restaurants .palette .descriptif_palette h3 {
   font-size: 19px;
@@ -368,6 +372,7 @@ footer i {
 }
 .restaurants .palette:hover {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+  transition:all 400ms;
 }
 .restaurants .note {
   display: flex;
@@ -400,6 +405,7 @@ footer i {
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
+  transition:all 400ms;
 }
 .restaurants .note #note_img {
   height: 185px;
@@ -437,6 +443,7 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition:all 1s;
 }
 .restaurants .note .descriptif_note h3 {
   font-size: 19px;
@@ -452,6 +459,7 @@ footer i {
 }
 .restaurants .note:hover {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+  transition:all 400ms;
 }
 .restaurants .française {
   display: flex;
@@ -471,6 +479,7 @@ footer i {
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
+  transition:all 400ms;
 }
 .restaurants .française #française_img {
   height: 185px;
@@ -508,6 +517,7 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition:all 1s;
 }
 .restaurants .française .descriptif_française h3 {
   font-size: 19px;
@@ -523,6 +533,7 @@ footer i {
 }
 .restaurants .française:hover {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+  transition:all 400ms;
   
 }
 .restaurants .delice {
@@ -542,6 +553,7 @@ footer i {
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
+  transition:all 400ms;
 }
 .restaurants .delice #delicesens_img {
   height: 185px;
@@ -561,6 +573,7 @@ footer i {
   margin-top: -4px;
   display: flex;
   justify-content: space-between;
+
 }
 .restaurants .delice .descriptif_delice .heart {
   align-self: center;
@@ -579,6 +592,7 @@ footer i {
   padding-top: 3px;
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
+  transition:all 1s;
 }
 .restaurants .delice .descriptif_delice h3 {
   font-size: 19px;
@@ -595,4 +609,5 @@ footer i {
 .restaurants .delice:hover {
   box-shadow: 30px 30px 20px rgba(5, 0, 0, 0.25);
   border-radius: 10px;
+  transition:all 400ms;
 }/*# sourceMappingURL=main.css.map */

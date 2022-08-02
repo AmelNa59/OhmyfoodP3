@@ -14,7 +14,7 @@
 
 
      i{
-        color:#353535;
+        color:white;
         display:inline-flex;
         align-items:center;
         cursor:pointer;
@@ -89,6 +89,9 @@
                         left:-15px;
                     }
 
+                    i{
+                        color:#353535;
+                    }
                    
                         span{
                             font-weight: bold;
@@ -96,19 +99,19 @@
                             letter-spacing: 0px;
                             }
                             }
-                            
+                            .btn1:hover{
+                               i{
+                                color:#9356dc;
+                               }
+                                     
+                             }
+                     
                         }
 
-            .btn1:hover{
-                    box-shadow:0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
-                        
-                }
+                      
+                
 
-                .btn1:last-child{
-                   background-color: #f5edff;
-                        
-                }
-        }
+          
     
     
     /*SECTION RESTAURANTS*/
@@ -428,4 +431,4 @@
         }
     }
     
- 
+}
