@@ -433,23 +433,23 @@ h3 {
   width: 5%;
   text-align: right;
 }
-.btn-menu:hover .text-menu .descriptif-menu .boeuf {
+.btn-menu:hover .text-menu .boeuf {
   margin-left: 90px;
 }
-.btn-menu:hover .text-menu .descriptif-menu .parmentier {
+.btn-menu:hover .text-menu .parmentier {
   margin-left: 90px;
 }
-.btn-menu:hover .text-menu .descriptif-menu .turbot {
+.btn-menu:hover .text-menu .turbot {
   margin-left: 90px;
 }
-.btn-menu:hover .text-menu .descriptif-menu p {
+.btn-menu:hover .text-menu p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   float: right;
   position: relative;
 }
-.btn-menu:hover .text-menu .descriptif-menu span {
+.btn-menu:hover .text-menu span {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -457,11 +457,11 @@ h3 {
   text-align: left;
   text-align: justify;
 }
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect {
+.btn-menu:hover .text-menu .animation-rect {
   margin-right: -15px;
   border-radius: 0 20px 20px 0;
 }
-.btn-menu:hover .text-menu .descriptif-menu .animation-rect i {
+.btn-menu:hover .text-menu .animation-rect i {
   color: white;
   align-self: center;
   padding-left: 25%;
