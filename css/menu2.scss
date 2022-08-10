@@ -4,505 +4,295 @@
 @import "./composants/composants";
 @import "./layouts/header";
 @import "./layouts/footer";
-
-
 /*BACKGROUND*/
 .main{
-    background-color: #f6f6f6;
-
-    
+background-color: #f6f6f6;
 }
 .block-image{
-   @include block-image;
-   #img-menu{
-    object-position: center;
-   }
+@include block-image;
+#img-menu{
+object-position: center;
 }
-
+}
 header{
-    .header_arrow{
-    
-        i{
-            position: absolute;
-            left: 2rem;
-            height: 2rem;
-            width: 2rem;
-            top: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: translateY(-50%);
-            font-size: 24px;
-            color: #000;
-        }
-    h1{
-        a{
-            color:black;
-            text-decoration: none;
-        }
-    }
-    }
-    }
+.header_arrow{
+i{
+position: absolute;
+left: 2rem;
+height: 2rem;
+width: 2rem;
+top: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateY(-50%);
+font-size: 24px;
+color: #000;
+}
+h1{
+a{
+color:black;
+text-decoration: none;
+}
+}
+}
+}
 .plats-btns{
-    background-color:#f6f6f6;
-    margin-top: 0;
-    border-radius: 50px 50px 0 0;
-    position:relative;
-    margin-top:210px;
-    padding-left: 25px;
-    padding-right: 25px;
- 
-
-    
-    .title-menu{
-        display:flex;
-        @include flex_row;
-        align-items: center;
-        justify-content: space-between;
-
-        .heart{
-            align-self: flex-end;
-             font-size: 12px;
-            padding-bottom: 8px;
+background-color:#f6f6f6;
+margin-top: 0;
+border-radius: 50px 50px 0 0;
+position:relative;
+margin-top:210px;
+padding-left: 25px;
+padding-right: 25px;
+.title-menu{
+display:flex;
+@include flex_row;
+align-items: center;
+justify-content: space-between;
+.heart{
+align-self: flex-end;
+font-size: 12px;
+padding-bottom: 8px;
 }
-
-        .heart:hover{
-            align-self: flex-end;
-            font-size: 12px;
-            padding-bottom: 8px;
-
-            i{
-                padding-top: 3px;
-                padding-right: 10px;
-        
-            }
-            i:hover{
-                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
-                background-clip: text;
-                -webkit-background-clip: text;
-                font-weight:bold;
-                padding-right: 2px;
-                -webkit-text-fill-color: transparent;
-          
-                
-        
-            }
-        }
-        }
-    }  
-
-    h2{
-        font-family:$header-ffamily;
-        font-weight: 500;
-        padding-left: 20px;
-        padding-top: 30px;
-        
-    }
-    h3{
-        font-weight: 100;
-    
-        border-bottom: 3px solid #b5e8db;
-        width:50px; 
-
-
-
-    }
-
-
+.heart:hover{
+align-self: flex-end;
+font-size: 12px;
+padding-bottom: 8px;
+i{
+padding-top: 3px;
+padding-right: 10px;
+}
+i:hover{
+color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
+background-clip: text;
+-webkit-background-clip: text;
+font-weight:bold;
+padding-right: 2px;
+-webkit-text-fill-color: transparent;
+}
+}
+}
+}  
+h2{
+font-family:$header-ffamily;
+font-weight: 500;
+padding-left: 20px;
+padding-top: 30px;
+}
+h3{
+font-weight: 100;
+border-bottom: 3px solid #b5e8db;
+width:50px; 
+}
 .wrapper-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    width: 100%;
-    justify-items: center;
-    gap: 2px;
-    justify-content: center;
-    transform: translateY(10%);
-  
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+width: 100%;
+justify-items: center;
+gap: 2px;
+justify-content: center;
+transform: translateY(10%);
 .btn-menu{
-    @include btn1;
-    @include flex-column;
-    background-color: white;
-    height: 65px;
-    padding-top:30px;
-    margin-bottom: 15px;
-    width:350px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    animation-fill-mode: both;
-    transform: translateY(50px);
-    transform: translateY(20%);
-    transition:all 400ms;
-  
-    }
-
-    .text-menu{
-        flex-flow: column wrap;      
-        line-height: 25px;
-        justify-content: center;
-        width: 100%;
-        cursor:pointer;
-        display: inline-block;
-        position:relative;
-        text-overflow: ellipsis;
-        padding-bottom: 10px;
-
-        h4{
-         @include h4_font;
-         text-align: left;
-        }
-        .descriptif-menu{
-            @include flex_row;
-            justify-content: space-between;
-            width:100%;
-     
-            .animation-rect{
-                        
-                display:inline-flex;
-                margin:-38px -120px -10px 10px;
-                 width: 60px;
-                 height: 65px;
-                background-color: #99E2D0;
-                justify-content: center;
-                align-items: center;
-                transition:all 400ms;
-             
-                    i{
-                    color: white;
-                    display: flex;
-                    align-self: center;
-                  
-                
-                    }
-                }
-
-                .truffe{
-                    width:10%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-
-                .blini{
-                    width:25%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-
-                
-                .orange{
-                    width:30%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-
-                .celeri{
-                    width:30%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-
-                .patate{
-                    width:40%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-
-                
-                .riz{
-                    width:20%;
-                 
-                    text-align: right;
-                    align-items:center;
-                    font-weight: bold;
-                }
-
-                .glace{
-                    width: 2%;
-                   padding-right: 35px;
-                   font-weight: bold;
-                }
-
-                .confiture{
-                    width: 36%;
-                   padding-left: 45px;
-                   font-weight: bold;
-                }
-
-                
-                .coulis{
-                    width:38%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-                .citron{
-                    width:60%;
-                    text-align: right;
-                    font-weight: bold;
-                }
-                p{
-                    font-weight: bold;
-                }
-            }
-        }
-
-        &:last-child{
-            margin-bottom:0px;
-          
-        }
-        }
-  
-        .dish-1{
-            animation:slide-in 1s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-        }
-            
-        .dish-2{
-             animation:slide-in 0.7s 0.1s linear forwards;
-             box-shadow: 0 3px 5px #ccc;
-    
-             &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-    
-            }
-        
-        .dish-3{
-            animation:slide-in 0.7s 0.2s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-     
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-
-        }
-        
-        .dish-4{
-            animation:slide-in 0.7s 0.3s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-
-                
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-            }
-        
-        .dish-5{
-            animation:slide-in 0.7s 0.4s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-        
-        }
-        .dish-6{
-            animation:slide-in 0.7s 0.5s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-        }
-        .dish-7{
-            animation:slide-in 0.7s 0.6s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-        
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-        
-        }
-        .dish-8{
-            animation:slide-in 0.7s 0.7s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-
-        }
-        .dish-9{
-            animation:slide-in 0.7s 0.8s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-            
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-        }
-            
-    
-
-        .dish-10{
-            animation:slide-in 0.7s 0.8s linear forwards;
-            box-shadow: 0 3px 5px #ccc;
-            
-            &:hover{
-                transition:all 0.5s;
-                box-shadow: 0 10px 5px #ccc;
-            }
-            
-        }
-        @keyframes slide-in {
-
-            100%{
-                transform: translateX(0%);
-            }
-            
-        }
-.btn-menu:hover{
-
-        transition:all 400ms;
-    
-    .text-menu{
-
-    h4{
-        
-        white-space: nowrap;
-        text-overflow : ellipsis;
-     
-    }
-        .descriptif-menu{
-       
-            .truffe{
-                width:25%;
-                text-align: left;
-                
-            }
-            .blini{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .orange{
-                width:25%;
-                text-align: left;
-                
-            }
-            .confiture{
-                width:25%;
-                text-align: left;
-                
-            }
-            .celeri{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .patate{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .riz{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .coulis{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            
-            .citron{
-                width:25%;
-                text-align: left;
-                
-            }
-
-            .glace{
-                width:25%;
-                text-align: left;
-                
-            }
-            p{
-                transform: translateX(-60px);
-           
-                transition: 0.3s ease-in-out;   
-                white-space: nowrap;
-                text-overflow : ellipsis;
-                overflow: hidden;
-                float:right;
-                position:relative;
-                left:30px;
-                
-            }
-
-            span{
-    
-            
-                white-space: nowrap;
-                text-overflow : ellipsis;
-                overflow: hidden;
-                width:200px;
-                text-align: left;
-                text-align: justify; 
-               
-               
-            }
-
-            .animation-rect{
-                transform: translateX(-100px);
-                border-radius: 0 20px 20px 0;    
-        
-                i{
-                    color: white;
-                    align-self: center;
-                    padding-left: 25%;
-                    padding-right: 25%;
-                    animation: quarterspin .8s ease-in;
-                    transform-origin:center;
-                    transition-duration: 0.6s;
-                    animation-duration: 1s;
-                    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45,1);
-                    @keyframes quarterspin {
-                        0%{
-                            transform: rotate(-360deg);
-                            opacity: 1;
-                        }
-                        100%{
-                            transform:rotate(0);
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
-        }
-        
-
-
+@include btn1;
+@include flex-column;
+background-color: white;
+height: 65px;
+padding-top:30px;
+margin-bottom: 15px;
+width:350px;
+overflow: hidden;
+text-overflow: ellipsis;
+animation-fill-mode: both;
+transform: translateY(50px);
+transform: translateY(20%);
+transition:all 400ms;
 }
-        
-    .btn-cmder{
-        background-color: #f6f6f6;
-        text-align: center;
-
-        .Commander{
-    margin-top: 50px;
-    margin-bottom: 80px;
-        }
-    }
-
- .btn-menu:last-child{
-    margin-bottom: 50px;
- }
+.text-menu{
+flex-flow: column wrap;      
+line-height: 25px;
+justify-content: center;
+width: 100%;
+cursor:pointer;
+display: inline-block;
+position:relative;
+text-overflow: ellipsis;
+padding-bottom: 10px;
+h4{
+@include h4_font;
+text-align: left;
+}
+.descriptif-menu{
+@include flex_row;
+justify-content: space-between;
+width:100%;
+.animation-rect{
+display:inline-flex;
+margin:-38px -120px -10px 10px;
+width: 60px;
+height: 65px;
+background-color: #99E2D0;
+justify-content: center;
+align-items: center;
+transition:all 0.4s;
+i{
+color: white;
+display: flex;
+align-self: center;
+}
+}
+.font-price{
+text-align: right;
+font-weight: bold;
+transition:all 0.4s;
+}
+.truffe{
+width:10%;
+}
+.blini{
+width:25%;
+}
+.orange{
+width:30%;
+}
+.celeri{
+width:30%;
+}
+.patate{
+width:20%;
+padding-left: 60px;
+font-weight: bold;
+}
+.riz{
+width:20%;
+align-items:center;
+}
+.glace{
+width: 2%;
+padding-right: 35px;
+font-weight: bold;
+}
+.confiture{
+width: 36%;
+padding-left: 45px;
+font-weight: bold;
+}
+.coulis{
+width:20%;
+font-weight: bold;
+padding-left: 60px;
+}
+.citron{
+width:60%;
+}
+p{
+font-weight: bold;
+}
+}
+}
+&:last-child{
+margin-bottom:0px;
+}
+}
+.dish-anim{
+box-shadow: 0 3px 5px #ccc;
+&:hover{
+transition:all 0.5s;
+box-shadow: 0 10px 5px #ccc;
+}
+}
+@for $i from 1 through 10{   
+.dish-#{$i} {
+animation:slide-in 1s (0.1s * $i) linear forwards;
+}
+}
+@keyframes slide-in {
+0% {
+opacity: 0;
+transform:translateY(50px);
+}
+100% {
+opacity: 1;
+transform:translateY(0px);
+}
+}
+.btn-menu:hover{
+transition:all 400ms;
+.text-menu{
+h4{
+white-space: nowrap;
+text-overflow : ellipsis;
+}
+.descriptif-menu{
+.font-price-hover{
+width:5%;
+text-align: right;
+}
+.confiture{
+padding-right: 50px;
+}
+.coulis{
+padding-right: 50px;
+}
+.patate{
+padding-right: 50px;
+}
+p{
+transform: translateX(-60px);
+transition: 0.3s ease-in-out;   
+white-space: nowrap;
+text-overflow : ellipsis;
+overflow: hidden;
+float:right;
+position:relative;
+left:30px;
+}
+span{
+white-space: nowrap;
+text-overflow : ellipsis;
+overflow: hidden;
+width:125px;
+text-align: left;
+text-align: justify;   
+}
+.animation-rect{
+transform: translateX(-100px);
+border-radius: 0 20px 20px 0;    
+i{
+color: white;
+align-self: center;
+padding-left: 25%;
+padding-right: 25%;
+animation: quarterspin .8s ease-in;
+transform-origin:center;
+transition-duration: 0.6s;
+animation-duration: 1s;
+animation-timing-function:cubic-bezier(0.25, 0.46, 0.45,1);
+@keyframes quarterspin {
+0%{
+transform: rotate(-360deg);
+opacity: 1;
+}
+100%{
+transform:rotate(0);
+opacity: 1;
+}
+}
+}
+}
+}
+}
+}
+.btn-cmder{
+background-color: #f6f6f6;
+text-align: center;
+.Commander{
+margin-top: 50px;
+margin-bottom: 80px;
+}
+}
+.btn-menu:last-child{
+margin-bottom: 50px;
+}
