@@ -8,56 +8,71 @@ html, body {
   position: relative;
 }
 
-
-.loader{
-  position: fixed;
-background-color:white;
-  height:100vh;
-  display: grid;
-  place-items: center;
-  inset:0;
-  z-index:10000;
-  opacity:0.8;
-  animation: loader .01s;
-  transform-origin: top;
-  animation-duration: .5s;
-  animation-fill-mode:forwards;
-  animation-duration: 0.01s;
-    animation-timing-function: ease;
-    animation-delay: 1.75s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-play-state: running;
-    animation-name: loader;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  padding: 35px;
+  letter-spacing: 0;
+  padding-bottom: 0;
+  margin: 0;
 }
 
-.loader i{
-
-  background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
-  background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
-  background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color:transparent;
+p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px;
 }
 
-@keyframes loader{
-
-  100%{
-    opacity:0;
-    z-index:-10;
-}
+.gradient-purple {
+  background: #E78FE1;
+  background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
 }
 
 .wrapper-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
   width: 100%;
   justify-items: center;
-  gap: 2em;
+  gap: 2px;
   justify-content: center;
+}
+
+/*BOUTON FONCTIONNEMENT*/
+.btn1 {
+  font: 14px/2.3em trebuchet, arial;
+  color: #353535;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 25px 15px;
+  width: 320px;
+  position: relative;
+  margin: 3px auto 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  -o-box-shadow: 0 3px 5px #ccc;
+  -ms-box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  transition: all 400ms;
+}
+
+/*BOUTON DE BASE HERO*/
+.btn-model {
+  border: none;
+  margin: 20px;
+  padding: 18px 15px 18px 15px;
+  width: 210px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: all 400ms;
 }
 
 header {
@@ -90,6 +105,7 @@ footer p {
   font-size: 18px;
   margin: 2px;
   padding-bottom: 10px;
+  text-align: left;
 }
 footer a {
   text-decoration: none;
@@ -101,7 +117,7 @@ footer i {
   padding-right: 12px;
 }
 
-/*CITY*/
+/*CITY MAP*/
 .map {
   display: flex;
   flex-flow: row wrap;
@@ -111,7 +127,7 @@ footer i {
   background-color: #eaeaea;
 }
 .map i {
-  color: #353535;
+  color: white;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -132,50 +148,20 @@ footer i {
   background-color: #f6f6f6;
   text-align: center;
 }
-.hero h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  text-align: center;
-  padding: 35px;
-  letter-spacing: 0;
-  padding-bottom: 0;
-  margin: 0;
+.hero h2:hover {
+  box-shadow: 10px 10px 20px black(0 0/25%);
 }
-.hero p {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 15px;
+.hero p:hover {
+  box-shadow: 10px 10px 20px black(0 0/25%);
 }
-.hero button {
-  border: none;
-  margin: 20px;
-  padding: 18px 15px 18px 15px;
-  width: 210px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  color: white;
-  background: #E78FE1;
-  background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-  margin-bottom: 60px;
+.hero .a {
   box-shadow: 0 5px 5px #ccc;
-  transition:all 400ms;
 }
-.hero button:hover {
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero a{
+.hero a {
   text-decoration: none;
-  color:white;
-  font-family:"Roboto", sans-serif;
-
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
-
 
 /*SECTION STEPS*/
 .steps {
@@ -183,6 +169,7 @@ footer i {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  /*SECTION RESTAURANTS*/
 }
 .steps h2 {
   font-family: "Roboto", sans-serif;
@@ -195,43 +182,6 @@ footer i {
   margin: 30px;
   align-self: start;
   margin: 30px;
-}
-.steps .wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  width: 100%;
-  justify-items: center;
-  gap: 2em;
-  justify-content: center;
-}
-.steps .wrapper-grid .btn1 {
-  font: 14px/2.3em trebuchet, arial;
-  color: #353535;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 25px 15px;
-  width: 320px;
-  position: relative;
-  margin: 3px auto 5px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  -o-box-shadow: 0 3px 5px #ccc;
-  -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
-}
-
-.steps .wrapper-grid .btn1 i{
-  padding-right:20px;
-  font-size:20px;
-  color:#848484;
-}
-
-.steps .wrapper-grid .btn1 i:last-child{
-  padding-right:20px;
-  font-size:20px;
-  color:#9356dc;
 }
 .steps .wrapper-grid .btn1 .number {
   counter-increment: compteListe 1;
@@ -247,25 +197,18 @@ footer i {
   position: absolute;
   left: -15px;
 }
+.steps .wrapper-grid .btn1 i {
+  color: #353535;
+}
 .steps .wrapper-grid .btn1 span {
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 0px;
 }
-.steps .btn1:hover {
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  transition:all 400ms;
-  background-color: #f5edff;
-  transition:all 400ms;
+.steps .wrapper-grid .btn1:hover i {
+  color: #9356dc;
 }
-
-.steps .btn1:hover i {
-  color:#9356dc;
-}
-
-
-/*SECTION RESTAURANTS*/
-.restaurants {
+.steps .restaurants {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -274,7 +217,7 @@ footer i {
   gap: 40px;
   margin-top: 50px;
 }
-.restaurants h2 {
+.steps .restaurants h2 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 800;
@@ -286,7 +229,11 @@ footer i {
   align-self: start;
   margin-bottom: 0;
 }
-.restaurants .palette {
+.steps .restaurants .palette:hover {
+  box-shadow: 0 1px 1px #ccc;
+  border-radius: 0px;
+}
+.steps .restaurants .palette {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -295,7 +242,7 @@ footer i {
   height: 250px;
   position: relative;
 }
-.restaurants .palette .new-rect {
+.steps .restaurants .palette .new-rect {
   width: 80px;
   height: 6px;
   background-color: #99e2d0;
@@ -304,49 +251,49 @@ footer i {
   position: absolute;
   right: 0.75rem;
 }
-.restaurants .palette .new-rect span {
+.steps .restaurants .palette .new-rect span {
   color: #058a6a;
   font-size: 15px;
   top: 3px;
   position: absolute;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
-.restaurants .palette a {
+.steps .restaurants .palette a {
   width: 100%;
   text-decoration: none;
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
-  transition:all 400ms;
 }
-.restaurants .palette #palettegout_img {
+.steps .restaurants .palette #palettegout_img {
   height: 185px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
-.restaurants .palette .descriptif_palette {
+.steps .restaurants .palette .descriptif_palette {
   flex-flow: row wrap;
   background-color: #ffffff;
   padding: 10px;
   height: 80px;
   width: 100%;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 0 3px 5px #ccc;
   display: flex;
   justify-content: space-between;
   margin-top: -4px;
 }
-.restaurants .palette .descriptif_palette .heart {
+.steps .restaurants .palette .descriptif_palette .heart {
   align-self: center;
 }
-.restaurants .palette .descriptif_palette .heart i {
+.steps .restaurants .palette .descriptif_palette .heart i {
   padding-top: 3px;
   padding-right: 10px;
-
 }
-.restaurants .palette .descriptif_palette .heart i:hover {
+.steps .restaurants .palette .descriptif_palette .heart i:hover {
   color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
@@ -356,10 +303,8 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 0.3s;
-  
 }
-.restaurants .palette .descriptif_palette h3 {
+.steps .restaurants .palette .descriptif_palette h3 {
   font-size: 19px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
@@ -367,15 +312,13 @@ footer i {
   margin: 0;
   padding-left: 5px;
 }
-.restaurants .palette .descriptif_palette span {
+.steps .restaurants .palette .descriptif_palette span {
   font-size: 20px;
   padding-left: 5px;
+  font-family: "Roboto";
+  font-family: "Roboto";
 }
-.restaurants .palette:hover {
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-  transition:all 400ms;
-}
-.restaurants .note {
+.steps .restaurants .note {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -384,7 +327,7 @@ footer i {
   height: 250px;
   position: relative;
 }
-.restaurants .note .new-rect {
+.steps .restaurants .note .new-rect {
   width: 80px;
   height: 6px;
   background-color: #99e2d0;
@@ -393,48 +336,47 @@ footer i {
   position: absolute;
   right: 0.75rem;
 }
-.restaurants .note .new-rect span {
+.steps .restaurants .note .new-rect span {
   color: #058a6a;
   font-size: 15px;
   top: 3px;
   position: absolute;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
-.restaurants .note a {
+.steps .restaurants .note a {
   width: 100%;
   text-decoration: none;
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
-  transition:all 400ms;
 }
-.restaurants .note #note_img {
+.steps .restaurants .note #note_img {
   height: 185px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants .note .descriptif_note {
+.steps .restaurants .note .descriptif_note {
   flex-flow: row wrap;
   background-color: #ffffff;
   padding: 10px;
   height: 80px;
   width: 100%;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 0 3px 5px #ccc;
   display: flex;
   justify-content: space-between;
   margin-top: -4px;
 }
-.restaurants .note .descriptif_note .heart {
+.steps .restaurants .note .descriptif_note .heart {
   align-self: center;
 }
-.restaurants .note .descriptif_note .heart i {
+.steps .restaurants .note .descriptif_note .heart i {
   padding-top: 3px;
   padding-right: 10px;
 }
-.restaurants .note .descriptif_note .heart i:hover {
+.steps .restaurants .note .descriptif_note .heart i:hover {
   color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
@@ -444,9 +386,8 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 0.3s;
 }
-.restaurants .note .descriptif_note h3 {
+.steps .restaurants .note .descriptif_note h3 {
   font-size: 19px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
@@ -454,15 +395,16 @@ footer i {
   margin: 0;
   padding-left: 5px;
 }
-.restaurants .note .descriptif_note span {
+.steps .restaurants .note .descriptif_note span {
   font-size: 20px;
   padding-left: 5px;
+  font-family: "Roboto";
+  font-family: "Roboto";
 }
-.restaurants .note:hover {
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-  transition:all 400ms;
+.steps .restaurants .note:hover {
+  box-shadow: 10px 5px 5px #c267dc;
 }
-.restaurants .française {
+.steps .restaurants .française {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -474,41 +416,42 @@ footer i {
   align-items: center;
   justify-content: center;
 }
-.restaurants .française a {
+.steps .restaurants .française a {
   width: 100%;
   text-decoration: none;
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
-  transition:all 400ms;
 }
-.restaurants .française #française_img {
+.steps .restaurants .française #française_img {
   height: 185px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
-.restaurants .française .descriptif_française {
+.steps .restaurants .française .descriptif_française {
   flex-flow: row wrap;
   background-color: #ffffff;
   padding: 10px;
   height: 80px;
   width: 100%;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 0 3px 5px #ccc;
   display: flex;
   justify-content: space-between;
   margin-top: -4px;
 }
-.restaurants .française .descriptif_française .heart {
+.steps .restaurants .française .descriptif_française .heart {
   align-self: center;
 }
-.restaurants .française .descriptif_française .heart i {
+.steps .restaurants .française .descriptif_française .heart i {
   padding-top: 3px;
   padding-right: 10px;
 }
-.restaurants .française .descriptif_française .heart i:hover {
+.steps .restaurants .française .descriptif_française .heart i:hover {
   color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
@@ -518,9 +461,8 @@ footer i {
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition:all 0.3s;
 }
-.restaurants .française .descriptif_française h3 {
+.steps .restaurants .française .descriptif_française h3 {
   font-size: 19px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
@@ -528,16 +470,17 @@ footer i {
   margin: 0;
   padding-left: 5px;
 }
-.restaurants .française .descriptif_française span {
+.steps .restaurants .française .descriptif_française span {
   font-size: 20px;
   padding-left: 5px;
+  font-family: "Roboto";
+  font-family: "Roboto";
 }
-.restaurants .française:hover {
+.steps .restaurants .française:hover {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-  transition:all 400ms;
-  
+  border-radius: 10px;
 }
-.restaurants .delice {
+.steps .restaurants .delice {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -548,42 +491,40 @@ footer i {
   justify-content: space-between;
   margin-bottom: 90px;
 }
-.restaurants .delice a {
+.steps .restaurants .delice a {
   width: 100%;
   text-decoration: none;
   color: #353535;
   letter-spacing: -1px;
   font-size: 13px;
-  transition:all 400ms;
 }
-.restaurants .delice #delicesens_img {
+.steps .restaurants .delice #delicesens_img {
   height: 185px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants .delice .descriptif_delice {
+.steps .restaurants .delice .descriptif_delice {
   flex-flow: row wrap;
   background-color: #ffffff;
   padding: 10px;
   height: 80px;
   width: 100%;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 0 3px 5px #ccc;
   margin-top: -4px;
   display: flex;
   justify-content: space-between;
-
 }
-.restaurants .delice .descriptif_delice .heart {
+.steps .restaurants .delice .descriptif_delice .heart {
   align-self: center;
 }
-.restaurants .delice .descriptif_delice .heart i {
+.steps .restaurants .delice .descriptif_delice .heart i {
   padding-top: 3px;
   padding-right: 10px;
 }
-.restaurants .delice .descriptif_delice .heart i:hover {
+.steps .restaurants .delice .descriptif_delice .heart i:hover {
   color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
@@ -593,9 +534,8 @@ footer i {
   padding-top: 3px;
   padding-right: 10px;
   -webkit-text-fill-color: transparent;
-  transition:all 0.3s;
 }
-.restaurants .delice .descriptif_delice h3 {
+.steps .restaurants .delice .descriptif_delice h3 {
   font-size: 19px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
@@ -603,12 +543,13 @@ footer i {
   margin: 0;
   padding-left: 5px;
 }
-.restaurants .delice .descriptif_delice span {
+.steps .restaurants .delice .descriptif_delice span {
   font-size: 20px;
   padding-left: 5px;
+  font-family: "Roboto";
+  font-family: "Roboto";
 }
-.restaurants .delice:hover {
-  box-shadow: 30px 30px 20px rgba(5, 0, 0, 0.25);
+.steps .restaurants .delice:hover {
+  box-shadow: 10px 10px 20px black(0 0/25%);
   border-radius: 10px;
-  transition:all 400ms;
 }/*# sourceMappingURL=main.css.map */
