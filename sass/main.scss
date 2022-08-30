@@ -7,428 +7,447 @@
 
 
 /*CITY MAP*/
-    .map{
+.map {
     @include flex_row();
-    height:50px;
-    background-color:#eaeaea;   
+    height: 50px;
+    background-color: #eaeaea;
 
 
-     i{
-        color:white;
-        display:inline-flex;
-        align-items:center;
-        cursor:pointer;
-        width:35px;
-        height:35px;
-     
-        }
+    i {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
 
-    span{
+    }
+
+    span {
         font-family: $main-ffamily;
         font-size: 17px;
         font-weight: 600;
-        color:#353535;
+        color: #353535;
         justify-content: center;
     }
 }
 
 /*SECTION HERO*/
-    .hero{
-        display:block;
-        background-color:$background-block-section;
-        text-align: center;
+.hero {
+    display: block;
+    background-color: $background-block-section;
+    text-align: center;
 
-        h2:hover{
-            box-shadow:10px 10px 20px black( 0 0 / 25%);
-          
-        }
+    h2:hover {
+        box-shadow: 10px 10px 20px black(0 0 / 25%);
+
+    }
 
 
-        p:hover{
-            box-shadow:10px 10px 20px black( 0 0 / 25%);
-          
-        }
+    p:hover {
+        box-shadow: 10px 10px 20px black(0 0 / 25%);
 
-        .a{
-            box-shadow:0 5px 5px #ccc;
+    }
 
-        }
+    .a {
+        box-shadow: 0 5px 5px #ccc;
 
-        a{
-            text-decoration: none;
-            color:white;
-            font-family:$main-ffamily;
-        }
-        }
+    }
 
-     /*SECTION STEPS*/
-     .steps{
-        @include flex-column();
-        align-items: center;
-    
-            h2{
-                @include h2_font();
-                align-self: start;
-                margin:30px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $main-ffamily;
+    }
+}
+
+/*SECTION STEPS*/
+.steps {
+    @include flex-column();
+    align-items: center;
+
+    h2 {
+        @include h2_font();
+        align-self: start;
+        margin: 30px;
+    }
+
+    .wrapper-grid {
+        .btn1 {
+
+            .number {
+                counter-increment: compteListe 1;
+                content: counter(compteListe) " ";
+                background: #9356dc;
+                height: 30px;
+                width: 30px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                position: absolute;
+                left: -15px;
             }
-            .wrapper-grid{
-                .btn1{
-   
-                    .number{
-                        counter-increment: compteListe 1;
-                        content: counter(compteListe) " ";
-                        background: #9356dc;
-                        height:30px;
-                        width: 30px;
-                        border-radius: 100px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: #fff;
-                        position: absolute;
-                        left:-15px;
-                    }
 
-                    i{
-                        color:#353535;
-                    }
-                   
-                        span{
-                            font-weight: bold;
-                            font-size:17px;
-                            letter-spacing: 0px;
-                            }
-                            }
-                            .btn1:hover{
-                               i{
-                                color:#9356dc;
-                               }
-                                     
-                             }
-                     
-                        }
+            i {
+                color: #353535;
+            }
 
-                      
-                
+            span {
+                font-weight: bold;
+                font-size: 17px;
+                letter-spacing: 0px;
+            }
+        }
 
-          
-    
-    
+        .btn1:hover {
+            i {
+                color: #9356dc;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
     /*SECTION RESTAURANTS*/
-    .restaurants{
+    .restaurants {
         @include flex-column();
-        background-color:#f6f6f6;
+        background-color: #f6f6f6;
         align-content: center;
-        gap:40px;
-        margin-top:50px;
-        h2{
+        gap: 40px;
+        margin-top: 50px;
+
+        h2 {
             @include h2_font();
             align-self: start;
             margin-bottom: 0;
         }
 
-        .palette:hover{
-         
-            box-shadow:0 1px 1px #ccc;
-            border-radius: 0px;
-                        
-    }
+        .palette:hover {
 
-        .palette{
+            box-shadow: 0 1px 1px #ccc;
+            border-radius: 0px;
+
+        }
+
+        .palette {
             @include flex_row();
             @include size_block();
             position: relative;
 
-            .new-rect{
-                width:80px;
-                height:6px;
+            .new-rect {
+                width: 80px;
+                height: 6px;
                 background-color: #99e2d0;
-               
-                padding:12px;
-                top:1rem;
-                position:absolute;
-                right:.75rem;
-              
-                span{
-                    color:#058a6a;
-                    font-size:15px;
-                    top:3px;
+
+                padding: 12px;
+                top: 1rem;
+                position: absolute;
+                right: .75rem;
+
+                span {
+                    color: #058a6a;
+                    font-size: 15px;
+                    top: 3px;
                     position: absolute;
                     font-family: 'Roboto';
                 }
             }
 
-            a{
-                width:100%;
+            a {
+                width: 100%;
                 text-decoration: none;
-              color:#353535;
-              letter-spacing:-1px;
-              font-size: 13px;
+                color: #353535;
+                letter-spacing: -1px;
+                font-size: 13px;
 
             }
-           #palettegout_img {
-            @include img();
-            object-position: bottom;
+
+            #palettegout_img {
+                @include img();
+                object-position: bottom;
             }
 
-            .descriptif_palette{
-            @include descriptif-block();
-            display: flex;
-            justify-content: space-between;
-            margin-top:-4px;
+            .descriptif_palette {
+                @include descriptif-block();
+                display: flex;
+                justify-content: space-between;
+                margin-top: -4px;
 
-            .heart{
-                align-self: center;
+                .heart {
+                    align-self: center;
 
-                i{
-                    
-                    padding-top: 3px;
-                    padding-right: 10px;
-             
+                    i {
+
+                        padding-top: 3px;
+                        padding-right: 10px;
+
+                    }
+
+                    i:hover {
+                        color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        ;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        padding-top: 3px;
+                        padding-right: 10px;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                    }
                 }
-                i:hover{
-                    color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                    background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    padding-top: 3px;
-                    padding-right: 10px;
-                    -webkit-text-fill-color: transparent;
-                    font-weight:bold;
+
+                h3 {
+                    @include h3_font();
+                }
+
+                span {
+                    @include span-restaurants();
+                    font-family: 'Roboto';
                 }
             }
-            h3{
-                @include h3_font();
-            }
 
-            span{
-                @include span-restaurants();
-                font-family: 'Roboto';
-            }
-            }
 
-            
         }
-                  
-        
-        
-        .note{
+
+
+
+        .note {
             @include flex_row();
             @include size_block();
             position: relative;
 
-            .new-rect{
-                width:80px;
-                height:6px;
+            .new-rect {
+                width: 80px;
+                height: 6px;
                 background-color: #99e2d0;
-               
-                padding:12px;
-                top:1rem;
-                position:absolute;
-                right:.75rem;
-              
-                span{
-                    color:#058a6a;
-                    font-size:15px;
-                    top:3px;
+
+                padding: 12px;
+                top: 1rem;
+                position: absolute;
+                right: .75rem;
+
+                span {
+                    color: #058a6a;
+                    font-size: 15px;
+                    top: 3px;
                     position: absolute;
-                    font-family:'Roboto';
+                    font-family: 'Roboto';
                 }
             }
-            a{
-                width:100%;
+
+            a {
+                width: 100%;
                 text-decoration: none;
-              color:#353535;
-              letter-spacing:-1px;
-              font-size: 13px;
+                color: #353535;
+                letter-spacing: -1px;
+                font-size: 13px;
 
             }
-    
+
             #note_img {
-            @include img();
-            
-            }
-    
-            .descriptif_note{
-            @include descriptif-block();
-            display: flex;
-            justify-content: space-between;
-            margin-top:-4px;
+                @include img();
 
-            
-
-            .heart{
-                align-self: center;
-
-                i{
-                    
-                    padding-top: 3px;
-                    padding-right: 10px;
-             
-                }
-                i:hover{
-                    color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                    background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    padding-top: 3px;
-                    padding-right: 10px;
-                    -webkit-text-fill-color: transparent;
-                    font-weight:bold;
-                }
-            }
-            h3{
-                @include h3_font();
             }
 
-            span{
-                @include span-restaurants();
-                font-family: 'Roboto';
-               
-            }
-            }
+            .descriptif_note {
+                @include descriptif-block();
+                display: flex;
+                justify-content: space-between;
+                margin-top: -4px;
+
+
+
+                .heart {
+                    align-self: center;
+
+                    i {
+
+                        padding-top: 3px;
+                        padding-right: 10px;
+
+                    }
+
+                    i:hover {
+                        color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        ;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        padding-top: 3px;
+                        padding-right: 10px;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                    }
                 }
 
-        .note:hover{
+                h3 {
+                    @include h3_font();
+                }
+
+                span {
+                    @include span-restaurants();
+                    font-family: 'Roboto';
+
+                }
+            }
+        }
+
+        .note:hover {
             box-shadow: 10px 5px 5px #c267dc;
-   
+
 
         }
-        .française{
+
+        .française {
             @include flex_row();
             @include size_block();
             @include flex_row;
 
 
-            a{
-                width:100%;
+            a {
+                width: 100%;
                 text-decoration: none;
-              color:#353535;
-              letter-spacing:-1px;
-              font-size: 13px;
+                color: #353535;
+                letter-spacing: -1px;
+                font-size: 13px;
 
             }
-            
+
             #française_img {
-            @include img();
-            object-position:bottom;
+                @include img();
+                object-position: bottom;
             }
 
-        .descriptif_française{
-        @include descriptif-block();
-        display: flex;
-        justify-content: space-between;
-        margin-top:-4px;
+            .descriptif_française {
+                @include descriptif-block();
+                display: flex;
+                justify-content: space-between;
+                margin-top: -4px;
 
-        .heart{
-            align-self: center;
+                .heart {
+                    align-self: center;
 
-            i{
-                    
-                padding-top: 3px;
-                padding-right: 10px;
-         
-            }
-            i:hover{
-                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
-                background-clip: text;
-                -webkit-background-clip: text;
-                padding-top: 3px;
-                padding-right: 10px;
-                -webkit-text-fill-color: transparent;
-                font-weight:bold;
-            }
-        }
-        
-        h3{
-            @include h3_font();
-        }
+                    i {
 
-        span{
-            @include span-restaurants();
-            font-family: 'Roboto';
-        }
+                        padding-top: 3px;
+                        padding-right: 10px;
 
-        }
                     }
 
-        .française:hover{
+                    i:hover {
+                        color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        ;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        padding-top: 3px;
+                        padding-right: 10px;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                    }
+                }
+
+                h3 {
+                    @include h3_font();
+                }
+
+                span {
+                    @include span-restaurants();
+                    font-family: 'Roboto';
+                }
+
+            }
+        }
+
+        .française:hover {
             box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-                        
+
         }
-        .delice{
+
+        .delice {
             @include flex_row();
             @include size_block();
             display: flex;
             justify-content: space-between;
             margin-bottom: 90px;
-          
 
 
-            
-            a{
-                width:100%;
-      
+
+
+            a {
+                width: 100%;
+
                 text-decoration: none;
-              color:#353535;
-              letter-spacing:-1px;
-              font-size: 13px;
+                color: #353535;
+                letter-spacing: -1px;
+                font-size: 13px;
 
             }
+
             #delicesens_img {
-            @include img()
+                @include img()
             }
 
-        .descriptif_delice{
-        @include descriptif-block();
-        margin-top:-4px;
-        display: flex;
-        justify-content: space-between;
-        .heart{
-            align-self: center;
+            .descriptif_delice {
+                @include descriptif-block();
+                margin-top: -4px;
+                display: flex;
+                justify-content: space-between;
 
-            i{
-                    
-                padding-top: 3px;
-                padding-right: 10px;
-        
+                .heart {
+                    align-self: center;
 
-         
+                    i {
+
+                        padding-top: 3px;
+                        padding-right: 10px;
+
+
+
+                    }
+
+                    i:hover {
+                        color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+                        ;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        font-weight: bold;
+                        padding-top: 3px;
+                        padding-right: 10px;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+
+                h3 {
+                    @include h3_font();
+                }
+
+                span {
+                    @include span-restaurants();
+                    font-family: 'Roboto';
+                }
             }
-            i:hover{
-                color:-webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
-                background-color: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%); ;
-                background-clip: text;
-                -webkit-background-clip: text;
-                font-weight:bold;
-                padding-top: 3px;
-                padding-right: 10px;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-     
-        h3{
-            @include h3_font();
         }
 
-        span{
-            @include span-restaurants();
-            font-family: 'Roboto';
-        }
-    }
-        }
-
-        .delice:hover{
-            box-shadow:10px 10px 20px black( 0 0 / 25%);
+        .delice:hover {
+            box-shadow: 10px 10px 20px black(0 0 / 25%);
             border-radius: 10px;
-                        
+
         }
     }
-    
+
 }
